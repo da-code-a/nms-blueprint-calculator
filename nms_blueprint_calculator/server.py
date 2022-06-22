@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, abort
+from flask import Flask, jsonify, render_template
 from json import load
 import pathlib
 
@@ -8,24 +8,24 @@ with open(pathlib.Path(__file__).parent.resolve() / 'static/blueprints.json', 'r
 
 
 @app.route('/')
-def show_index():
-    return jsonify({
-        'available_routes': [
-            {
-                'path': '/blueprints',
-                'description': 'Return all blueprints'
-            },
-            {
-                "path": "/blueprints/<category>",
-                "description": "Return all blueprints in the requested category"
-            }
-        ]
-    })
+def index():
+    return render_template('index.html')
 
-@app.route('/blueprints/<string:category>')
-@app.route('/blueprints/<string:category>/')
-@app.route('/blueprints', defaults={'category': None})
-@app.route('/blueprints/', defaults={'category': None})
+
+@app.route('/swagger')
+def swagger_ui():
+    return render_template('swagger.html')
+
+
+@app.route('/swagger.json')
+def swagger_json():
+    return render_template('swagger.json')
+
+
+@app.route('/api/blueprints/<string:category>')
+@app.route('/api/blueprints/<string:category>/')
+@app.route('/api/blueprints', defaults={'category': None})
+@app.route('/api/blueprints/', defaults={'category': None})
 def show_blueprints(category):
     if not category:
         return jsonify(blueprints)
