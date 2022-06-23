@@ -5,11 +5,12 @@ from dotenv import load_dotenv
 from nms_blueprint_calculator.utils import generate_id
 from nms_blueprint_calculator import __version__
 import pathlib
+import os
 
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = generate_id()
+app.secret_key = os.getenv("COOKIE_SIGNING_KEY", generate_id())
 db = firestore.Client()
 with open(pathlib.Path(__file__).parent.resolve() / "static/blueprints.json", "r") as f:
     blueprints = load(f)
