@@ -1,10 +1,26 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, session
 from json import load
+from google.cloud import firestore
+from dotenv import load_dotenv
+from nms_blueprint_calculator.utils import generate_id
+from nms_blueprint_calculator import __version__
 import pathlib
 
+load_dotenv()
+
 app = Flask(__name__)
+app.secret_key = generate_id()
+db = firestore.Client()
 with open(pathlib.Path(__file__).parent.resolve() / "static/blueprints.json", "r") as f:
     blueprints = load(f)
+
+
+@app.before_first_request
+def create_session_if_not_exists():
+    if "session_id" not in session:
+        session["session_id"] = generate_id()
+        session_doc = db.collection("sessions").document(session["session_id"])
+        session_doc.set({"app_version": __version__, "state": blueprints})
 
 
 @app.route("/")
