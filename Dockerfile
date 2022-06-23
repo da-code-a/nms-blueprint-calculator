@@ -12,7 +12,7 @@ RUN pip install -U pip \
 
 WORKDIR /usr/src/app
 COPY . .
-RUN poetry config virtualenvs.create false \
-  && poetry install --no-interaction --no-ansi
+RUN poetry export -f requirements.txt > requirements.txt
+RUN pip install -r requirements.txt
 
 ENTRYPOINT [ "./entrypoint.sh" ]

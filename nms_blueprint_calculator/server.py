@@ -15,7 +15,7 @@ with open(pathlib.Path(__file__).parent.resolve() / "static/blueprints.json", "r
     blueprints = load(f)
 
 
-@app.before_first_request
+@app.before_request
 def create_session_if_not_exists():
     if "session_id" not in session:
         session["session_id"] = generate_id()
