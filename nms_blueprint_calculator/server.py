@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, session
+from flask import Flask, jsonify, render_template, request, session, g, redirect
 from json import load
 from google.cloud import firestore
 from dotenv import load_dotenv
@@ -13,15 +13,25 @@ app = Flask(__name__)
 app.secret_key = os.getenv("COOKIE_SIGNING_KEY", generate_id())
 db = firestore.Client()
 with open(pathlib.Path(__file__).parent.resolve() / "static/blueprints.json", "r") as f:
-    blueprints = load(f)
+    base_state = load(f)
 
 
 @app.before_request
-def create_session_if_not_exists():
+def get_or_create_session():
     if "session_id" not in session:
         session["session_id"] = generate_id()
         session_doc = db.collection("sessions").document(session["session_id"])
-        session_doc.set({"app_version": __version__, "state": blueprints})
+        session_doc.set({"app_version": __version__, "state": base_state})
+        g.blueprints = base_state
+    else:
+        session_doc = (
+            db.collection("sessions").document(session["session_id"]).get().to_dict()
+        )
+        if not session_doc or session_doc["app_version"] != __version__:
+            session.clear()
+            return redirect(request.url)
+        g.blueprints = session_doc["state"]
+        print(g.blueprints)
 
 
 @app.route("/")
@@ -43,10 +53,10 @@ def swagger_json():
 @app.route("/api/blueprints", defaults={"category": None})
 def show_blueprints(category):
     if not category:
-        return jsonify(blueprints)
+        return jsonify(g.blueprints)
     else:
         try:
-            return jsonify(blueprints[category])
+            return jsonify(g.blueprints[category])
         except KeyError:
             return (
                 jsonify(
@@ -61,9 +71,9 @@ def show_blueprints(category):
             )
 
 
-@app.route("/api/blueprints/<string:category>/<string:item>")
+@app.route("/api/blueprints/<string:category>/<string:item>", methods=["GET", "PUT"])
 def show_item_blueprint(category, item):
-    if category not in blueprints:
+    if category not in g.blueprints:
         return (
             jsonify(
                 {
@@ -75,7 +85,7 @@ def show_item_blueprint(category, item):
             ),
             404,
         )
-    elif item not in blueprints[category]:
+    elif item not in g.blueprints[category]:
         return (
             jsonify(
                 {
@@ -88,12 +98,12 @@ def show_item_blueprint(category, item):
             404,
         )
     else:
-        return jsonify(blueprints[category][item])
+        return jsonify(g.blueprints[category][item])
 
 
 @app.route("/api/blueprints/categories")
 def show_categories():
-    return jsonify(list(blueprints.keys()))
+    return jsonify(list(g.blueprints.keys()))
 
 
 if __name__ == "__main__":
