@@ -16,6 +16,11 @@ with open(pathlib.Path(__file__).parent.resolve() / "static/blueprints.json", "r
     base_state = load(f)
 
 
+@app.route("/favicon.ico")
+def favicon():
+    return app.send_static_file("favicon.ico")
+
+
 @app.before_request
 def get_or_create_session():
     if "session_id" not in session:
@@ -31,7 +36,6 @@ def get_or_create_session():
             session.clear()
             return redirect(request.url)
         g.blueprints = session_doc["state"]
-        print(g.blueprints)
 
 
 @app.route("/")
@@ -50,6 +54,8 @@ def swagger_json():
 
 
 @app.route("/api/blueprints/<string:category>")
+@app.route("/api/blueprints/<string:category>/")
+@app.route("/api/blueprints/", defaults={"category": None})
 @app.route("/api/blueprints", defaults={"category": None})
 def show_blueprints(category):
     if not category:
