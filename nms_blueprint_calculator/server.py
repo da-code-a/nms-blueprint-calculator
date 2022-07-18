@@ -9,16 +9,19 @@ import os
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    static_url_path="",
+    static_folder="./react_assets",
+    template_folder="./react_assets",
+)
+
 app.secret_key = os.getenv("COOKIE_SIGNING_KEY", generate_id())
+
 db = firestore.Client()
+
 with open(pathlib.Path(__file__).parent.resolve() / "static/blueprints.json", "r") as f:
     base_state = load(f)
-
-
-@app.route("/favicon.ico")
-def favicon():
-    return app.send_static_file("favicon.ico")
 
 
 @app.before_request
