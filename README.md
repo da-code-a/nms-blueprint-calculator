@@ -6,4 +6,4 @@ This project is meant to be a way for players of Hello Games' [No Man's Sky](htt
 
 ## Contributing
 
-Any and all contributions will be helpful. Just fork this repository, make your changes, and submit a pull request. I will review any and all pull requests in as timely of a manner as possible.
+Any and all contributions will be helpful. Just fork this repository, make your changes, and submit a pull request. I will review any and all pull requests in as timely of a manner as possible. Just make sure that you use `yarn commit "<commit message>"` rather than `git commit` to make sure that all commits have a built version of the react app available for the Docker container in Google Cloud.

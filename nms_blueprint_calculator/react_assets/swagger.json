@@ -1,0 +1,121 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is the API for the No Man's Sky Blueprint Calculator",
+    "version": "0.1.0",
+    "title": "No Man's Sky Blueprint Calculator",
+    "contact": {
+      "email": "dakota.kae.brown@gmail.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "{{ request.host }}",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "blueprints",
+      "description": "Construction Blueprints"
+    }
+  ],
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/blueprints": {
+      "get": {
+        "tags": [
+          "blueprints"
+        ],
+        "summary": "Get all blueprints",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved data."
+          }
+        }
+      }
+    },
+    "/blueprints/{category}": {
+      "get": {
+        "tags": [
+          "blueprints"
+        ],
+        "summary": "Get all blueprints within the specified category",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved data."
+          },
+          "404": {
+            "description": "The requested category was not found."
+          }
+        }
+      }
+    },
+    "/blueprints/{category}/{item}": {
+      "get": {
+        "tags": [
+          "blueprints"
+        ],
+        "summary": "Get all blueprints within the specified category",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "item",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved data."
+          },
+          "404": {
+            "description": "The requested category was not found."
+          }
+        }
+      }
+    },
+    "/blueprints/categories": {
+      "get": {
+        "tags": [
+          "blueprints"
+        ],
+        "summary": "List all available categories",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved data."
+          }
+        }
+      }
+    }
+  }
+}

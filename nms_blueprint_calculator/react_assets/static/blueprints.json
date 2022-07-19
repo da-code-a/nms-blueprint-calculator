@@ -1,0 +1,4741 @@
+{
+  "large_prefabs": {
+    "cylindrical_room": {
+      "owned": false,
+      "name": "Cylindrical Room",
+      "cost": 3,
+      "requires": null,
+      "image_file": "PRODUCT-MAINROOM.PNG"
+    },
+    "square_room": {
+      "owned": false,
+      "name": "Square Room",
+      "cost": 3,
+      "requires": [
+        "Cylindrical Room"
+      ],
+      "image_file": "PRODUCT-MAINROOMCUBEF.PNG"
+    },
+    "straight_corridor": {
+      "owned": false,
+      "name": "Straight Corridor",
+      "cost": 5,
+      "requires": [
+        "Cylindrical Room"
+      ],
+      "image_file": "PRODUCT-CORRIDOR.PNG"
+    },
+    "door": {
+      "owned": false,
+      "name": "Door",
+      "cost": 1,
+      "requires": [
+        "Cylindrical Room"
+      ],
+      "image_file": "PRODUCT-BUILDDOOR.PNG"
+    },
+    "foundation": {
+      "owned": false,
+      "name": "Foundation",
+      "cost": 3,
+      "requires": [
+        "Cylindrical Room",
+        "Square Room"
+      ],
+      "image_file": "PRODUCT-FOUNDATION.PNG"
+    },
+    "l-shaped_corridor": {
+      "owned": false,
+      "name": "L-Shaped Corridor",
+      "cost": 5,
+      "requires": [
+        "Cylindrical Room",
+        "Straight Corridor"
+      ],
+      "image_file": "PRODUCT-CORRIDORL.PNG"
+    },
+    "glass_roofed_corridor": {
+      "owned": false,
+      "name": "Glass Roofed Corridor",
+      "cost": 5,
+      "requires": [
+        "Cylindrical Room",
+        "Straight Corridor"
+      ],
+      "image_file": "PRODUCT-GLASSCORRIDOR.PNG"
+    },
+    "holo-door": {
+      "owned": false,
+      "name": "Holo-Door",
+      "cost": 8,
+      "requires": [
+        "Cylindrical Room",
+        "Door"
+      ],
+      "image_file": "PRODUCT-DOOR2.PNG"
+    },
+    "access_ramp": {
+      "owned": false,
+      "name": "Access Ramp",
+      "cost": 1,
+      "requires": [
+        "Cylindrical Room",
+        "Access Ramp"
+      ],
+      "image_file": "PRODUCT-BUILDRAMP.PNG"
+    },
+    "small_paving": {
+      "owned": false,
+      "name": "Small Paving",
+      "cost": 1,
+      "requires": [
+        "Cylindrical Room",
+        "Square Room",
+        "Foundation"
+      ],
+      "image_file": "PRODUCT-BUILDPAVING.PNG"
+    },
+    "cylindrical_room_frame": {
+      "owned": false,
+      "name": "Cylindrical Room Frame",
+      "cost": 3,
+      "requires": [
+        "Cylindrical Room",
+        "Square Room",
+        "Foundation"
+      ],
+      "image_file": "PRODUCT-MAINROOMFRAME.PNG"
+    },
+    "t-shaped_corridor": {
+      "owned": false,
+      "name": "T-Shaped Corridor",
+      "cost": 5,
+      "requires": [
+        "Cylindrical Room",
+        "Straight Corridor",
+        "L-Shaped Corridor"
+      ],
+      "image_file": "PRODUCT-CORRIDORT.PNG"
+    },
+    "x-shaped_corridor": {
+      "owned": false,
+      "name": "X-Shaped Corridor",
+      "cost": 5,
+      "requires": [
+        "Cylindrical Room",
+        "Straight Corridor",
+        "L-Shaped Corridor"
+      ],
+      "image_file": "PRODUCT-CORRIDORX.PNG"
+    },
+    "large_window": {
+      "owned": false,
+      "name": "Large Window",
+      "cost": 1,
+      "requires": [
+        "Cylindrical Room",
+        "Straight Corridor",
+        "Glass Corridor"
+      ],
+      "image_file": "PRODUCT-CUBEWINDOW.PNG"
+    },
+    "angled_window": {
+      "owned": false,
+      "name": "Angled Window",
+      "cost": 1,
+      "requires": [
+        "Cylindrical Room",
+        "Straight Corridor",
+        "Glass Corridor"
+      ],
+      "image_file": "PRODUCT-BUILDWINDOW.PNG"
+    },
+    "bio-dome": {
+      "owned": false,
+      "name": "Bio-Dome",
+      "cost": 10,
+      "requires": [
+        "Cylindrical Room",
+        "Straight Corridor",
+        "Glass Corridor"
+      ],
+      "image_file": "PRODUCT-BIOROOM.PNG"
+    },
+    "curved_corridor": {
+      "owned": false,
+      "name": "Curved Corridor",
+      "cost": 3,
+      "requires": [
+        "Cylindrical Room",
+        "Straight Corridor",
+        "Glass Corridor"
+      ],
+      "image_file": "PRODUCT-CORRIDORC.PNG"
+    },
+    "climb_ladder": {
+      "owned": false,
+      "name": "Climb Ladder",
+      "cost": 1,
+      "requires": [
+        "Cylindrical Room",
+        "Door",
+        "Access Ramp",
+        "Climb Ladder"
+      ],
+      "image_file": null
+    },
+    "paving": {
+      "owned": false,
+      "name": "Paving",
+      "cost": 1,
+      "requires": [
+        "Cylindrical Room",
+        "Square Room",
+        "Foundation",
+        "Small Paving"
+      ],
+      "image_file": "PRODUCT-BUILDPAVING_BIG.PNG"
+    },
+    "raised_small_paving": {
+      "owned": false,
+      "name": "Raised Small Paving",
+      "cost": 1,
+      "requires": [
+        "Cylindrical Room",
+        "Square Room",
+        "Foundation",
+        "Small Paving"
+      ],
+      "image_file": "PRODUCT-BUILDPAVINGTALL.PNG"
+    },
+    "large_glass_panel": {
+      "owned": false,
+      "name": "Large Glass Panel",
+      "cost": 1,
+      "requires": [
+        "Cylindrical Room",
+        "Straight Corridor",
+        "Glass Corridor",
+        "Angled Window"
+      ],
+      "image_file": "PRODUCT-PANEL_GLASS.PNG"
+    },
+    "viewing_sphere": {
+      "owned": false,
+      "name": "Viewing Sphere",
+      "cost": 10,
+      "requires": [
+        "Cylindrical Room",
+        "Straight Corridor",
+        "Glass Corridor",
+        "Bio-Dome"
+      ],
+      "image_file": "PRODUCT-VIEWSPHERE.PNG"
+    }
+  },
+  "small_prefabs": {
+    "cuboid_room": {
+      "owned": false,
+      "name": "Cuboid Room",
+      "cost": 2,
+      "requires": null,
+      "image_file": "PRODUCT-CUBEROOM.PNG"
+    },
+    "cuboid_room_foundation_strut": {
+      "owned": false,
+      "name": "Cuboid Room Foundation Strut",
+      "cost": 1,
+      "requires": [
+        "Cuboid Room"
+      ],
+      "image_file": "PRODUCT-CUBEFOUND.PNG"
+    },
+    "curved_cuboid_wall": {
+      "owned": false,
+      "name": "Curved Cuboid Wall",
+      "cost": 3,
+      "requires": [
+        "Cuboid Room"
+      ],
+      "image_file": "PRODUCT-CUBEROOMCURVED.PNG"
+    },
+    "glass_cuboid_room": {
+      "owned": false,
+      "name": "Glass Cuboid Room",
+      "cost": 5,
+      "requires": [
+        "Cuboid Room"
+      ],
+      "image_file": "PRODUCT-CUBEGLASS.PNG"
+    },
+    "cuboid_room_frame": {
+      "owned": false,
+      "name": "Cuboid Room Frame",
+      "cost": 1,
+      "requires": [
+        "Cuboid Room",
+        "Cuboid Room Foundation Strut"
+      ],
+      "image_file": "PRODUCT-CUBEFRAME.PNG"
+    },
+    "cuboid_room_flooring": {
+      "owned": false,
+      "name": "Cuboid Room Flooring",
+      "cost": 1,
+      "requires": [
+        "Cuboid Room",
+        "Cuboid Room Foundation Strut"
+      ],
+      "image_file": "PRODUCT-CUBEFLOOR.PNG"
+    },
+    "cuboid_room_foundation_strut_quad": {
+      "owned": false,
+      "name": "Cuboid Room Foundation Strut Quad",
+      "cost": 1,
+      "requires": [
+        "Cuboid Room",
+        "Cuboid Room Foundation Strut"
+      ],
+      "image_file": "PRODUCT-CUBEFOUND4.PNG"
+    },
+    "interior_stairs": {
+      "owned": false,
+      "name": "Interior Stairs",
+      "cost": 2,
+      "requires": [
+        "Cuboid Room",
+        "Curved Cuboid Wall"
+      ],
+      "image_file": "PRODUCT-CUBESTAIRS.PNG"
+    },
+    "cuboid_inner_wall": {
+      "owned": false,
+      "name": "Cuboid Inner Wall",
+      "cost": 1,
+      "requires": [
+        "Cuboid Room",
+        "Curved Cuboid Wall"
+      ],
+      "image_file": "PRODUCT-CUBEWALL.PNG"
+    },
+    "cuboid_roof_cap": {
+      "owned": false,
+      "name": "Cuboid Roof Cap",
+      "cost": 2,
+      "requires": [
+        "Cuboid Room",
+        "Curved Cuboid Wall"
+      ],
+      "image_file": "PRODUCT-CUBEROOF.PNG"
+    },
+    "curved_cuboid_roof": {
+      "owned": false,
+      "name": "Curved Cuboid Roof",
+      "cost": 3,
+      "requires": [
+        "Cuboid Room",
+        "Glass Cuboid Room"
+      ],
+      "image_file": "PRODUCT-CURVEDCUBEROOF.PNG"
+    },
+    "small_window": {
+      "owned": false,
+      "name": "Small Window",
+      "cost": 1,
+      "requires": [
+        "Cuboid Room",
+        "Glass Cuboid Room"
+      ],
+      "image_file": "PRODUCT-CUBEWINDOWSMALL.PNG"
+    },
+    "circle_window": {
+      "owned": false,
+      "name": "Circle Window",
+      "cost": 1,
+      "requires": [
+        "Cuboid Room",
+        "Glass Cuboid Room"
+      ],
+      "image_file": "PRODUCT-CUBEWINDOWOVAL.PNG"
+    },
+    "infrastructure_ladder": {
+      "owned": false,
+      "name": "Infrastructure Ladder",
+      "cost": 1,
+      "requires": [
+        "Cuboid Room",
+        "Curved Cuboid Wall",
+        "Interior Stairs"
+      ],
+      "image_file": "PRODUCT-WALLFLOORLADDER.PNG"
+    },
+    "cuboid_inner_door": {
+      "owned": false,
+      "name": "Cuboid Inner Door",
+      "cost": 1,
+      "requires": [
+        "Cuboid Room",
+        "Curved Cuboid Wall",
+        "Cuboid Inner Wall"
+      ],
+      "image_file": "PRODUCT-CUBEINNERDOOR.PNG"
+    }
+  },
+  "technology_modules": {
+    "save_beacon": {
+      "owned": false,
+      "name": "Save Beacon",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-BUILDBEACON.PNG"
+    },
+    "message_module": {
+      "owned": false,
+      "name": "Message Module",
+      "cost": 1,
+      "requires": [
+        "Save Beacon"
+      ],
+      "image_file": "PRODUCT-MESSAGEMODULE.PNG"
+    },
+    "health_station": {
+      "owned": false,
+      "name": "Health Station",
+      "cost": 5,
+      "requires": [
+        "Save Beacon"
+      ],
+      "image_file": "PRODUCT-HEALTHSTATION.PNG"
+    },
+    "base_teleport_module": {
+      "owned": false,
+      "name": "Base Teleport Module",
+      "cost": 2,
+      "requires": [
+        "Save Beacon"
+      ],
+      "image_file": "PRODUCT-TELEPORTER_F.PNG"
+    },
+    "light_box": {
+      "owned": false,
+      "name": "Light Box",
+      "cost": 1,
+      "requires": [
+        "Save Beacon"
+      ],
+      "image_file": "PRODUCT-LIGHTBOX.PNG"
+    },
+    "communications_station": {
+      "owned": false,
+      "name": "Communications Station",
+      "cost": 1,
+      "requires": [
+        "Save Beacon",
+        "Message Module"
+      ],
+      "image_file": "PRODUCT-MESSAGE.PNG"
+    },
+    "hazard_protection_unit": {
+      "owned": false,
+      "name": "Hazard Protection Unit",
+      "cost": 3,
+      "requires": [
+        "Save Beacon",
+        "Health Station"
+      ],
+      "image_file": "PRODUCT-SHIELDSTATION.PNG"
+    },
+    "oxygen_harvester": {
+      "owned": false,
+      "name": "Oxygen Harvester",
+      "cost": 1,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module"
+      ],
+      "image_file": "PRODUCT-O2_HARVESTER.PNG"
+    },
+    "appearance_modifier": {
+      "owned": false,
+      "name": "Appearance Modifier",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module"
+      ],
+      "image_file": "PRODUCT-DRESSING_TABLE.PNG"
+    },
+    "landing_pad": {
+      "owned": false,
+      "name": "Landing Pad",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module"
+      ],
+      "image_file": "PRODUCT-BUILDLANDINGPAD.PNG"
+    },
+    "galactic_trade_terminal": {
+      "owned": false,
+      "name": "Galactic Trade Terminal",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module"
+      ],
+      "image_file": "PRODUCT-BUILDTERMINAL.PNG"
+    },
+    "portable_refiner": {
+      "owned": false,
+      "name": "Portable Refiner",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module"
+      ],
+      "image_file": "PRODUCT-BUILD_REFINER1.PNG"
+    },
+    "light_floor": {
+      "owned": false,
+      "name": "Light Floor",
+      "cost": 1,
+      "requires": [
+        "Save Beacon",
+        "Light Box"
+      ],
+      "image_file": "PRODUCT-L_FLOOR_Q.PNG"
+    },
+    "noise_box": {
+      "owned": false,
+      "name": "Noise Box",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Light Box"
+      ],
+      "image_file": "PRODUCT-NOISEBOX.PNG"
+    },
+    "sphere_creator": {
+      "owned": false,
+      "name": "Sphere Creator",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Light Box"
+      ],
+      "image_file": "PRODUCT-SPAWNER_BALL.PNG"
+    },
+    "autonomous_mining_unit": {
+      "owned": false,
+      "name": "Autonomous Mining Unit",
+      "cost": 1,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Oxygen Harvester"
+      ],
+      "image_file": "PRODUCT-BUILDHARVESTER.PNG"
+    },
+    "alternative_landing_pad": {
+      "owned": false,
+      "name": "Alternative Landing Pad",
+      "cost": 1,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Landing Pad"
+      ],
+      "image_file": "PRODUCT-S_LANDINGZONE.PNG"
+    },
+    "signal_booster": {
+      "owned": false,
+      "name": "Signal Booster",
+      "cost": 1,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Portable Refiner"
+      ],
+      "image_file": "PRODUCT-BUILDSIGNAL.PNG"
+    },
+    "medium_refiner": {
+      "owned": false,
+      "name": "Medium Refiner",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Portable Refiner"
+      ],
+      "image_file": "PRODUCT-BUILD_REFINER2.PNG"
+    },
+    "nutrient_processor": {
+      "owned": false,
+      "name": "Nutrient Processor",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Portable Refiner"
+      ],
+      "image_file": "PRODUCT-COOKER.PNG"
+    },
+    "bytebeat_device": {
+      "owned": false,
+      "name": "ByteBeat Device",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Light Box",
+        "Noise Box"
+      ],
+      "image_file": "PRODUCT-BYTEBEAT.PNG"
+    },
+    "atmosphere_harvester": {
+      "owned": false,
+      "name": "Atmosphere Harvester",
+      "cost": 1,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Oxygen Harvester",
+        "Autonomous Mining Unit"
+      ],
+      "image_file": "PRODUCT-BUILDGASHARVEST.PNG"
+    },
+    "short-range_teleporter": {
+      "owned": false,
+      "name": "Short-Range Teleporter",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Landing Pad",
+        "Alternative Landing Pad"
+      ],
+      "image_file": "PRODUCT-U_MINIPORTAL.PNG"
+    },
+    "teleport_cable": {
+      "owned": false,
+      "name": "Teleport Cable",
+      "cost": 0,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Landing Pad",
+        "Alternative Landing Pad"
+      ],
+      "image_file": "PRODUCT-U_PORTALLINE.PNG"
+    },
+    "large_refiner": {
+      "owned": false,
+      "name": "Large Refiner",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Portable Refiner",
+        "Medium Refiner"
+      ],
+      "image_file": "PRODUCT-BUILD_REFINER3.PNG"
+    },
+    "antimatter_reactor": {
+      "owned": false,
+      "name": "Antimatter Reactor",
+      "cost": 20,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Portable Refiner",
+        "Medium Refiner"
+      ],
+      "image_file": "PRODUCT-BUILDANTIMATTER.PNG"
+    },
+    "livestock_unit": {
+      "owned": false,
+      "name": "Livestock Unit",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Portable Refiner",
+        "Nutrient Processor"
+      ],
+      "image_file": "PRODUCT-CREATURE_FARM.PNG"
+    },
+    "automated_feeder": {
+      "owned": false,
+      "name": "Automated Feeder",
+      "cost": 10,
+      "requires": [
+        "Save Beacon",
+        "Base Teleport Module",
+        "Portable Refiner",
+        "Nutrient Processor"
+      ],
+      "image_file": "PRODUCT-CREATURE_FEED.PNG"
+    },
+    "bytebeat_switch": {
+      "owned": false,
+      "name": "ByteBeat Switch",
+      "cost": 2,
+      "requires": [
+        "Save Beacon",
+        "Light Box",
+        "Noise Box",
+        "ByteBeat Device"
+      ],
+      "image_file": null
+    },
+    "bytebeat_cable": {
+      "owned": false,
+      "name": "ByteBeat Cable",
+      "cost": 0,
+      "requires": [
+        "Save Beacon",
+        "Light Box",
+        "Noise Box",
+        "ByteBeat Device"
+      ],
+      "image_file": "PRODUCT-U_BYTEBEATLINE.PNG"
+    }
+  },
+  "transport_modules": {
+    "roamer_geobay": {
+      "owned": false,
+      "name": "Roamer Geobay",
+      "cost": 4,
+      "requires": null,
+      "image_file": "PRODUCT-GARAGE_M.PNG"
+    },
+    "exocraft_summoning_station": {
+      "owned": false,
+      "name": "Exocraft Summoning Station",
+      "cost": 12,
+      "requires": [
+        "Roamer Geobay"
+      ],
+      "image_file": "PRODUCT-SUMMON_GARAGE.PNG"
+    },
+    "nomad_geobay": {
+      "owned": false,
+      "name": "Nomad Geobay",
+      "cost": 8,
+      "requires": [
+        "Roamer Geobay"
+      ],
+      "image_file": "PRODUCT-GARAGE_S.PNG"
+    },
+    "minotaur_geobay": {
+      "owned": false,
+      "name": "Minotaur Geobay",
+      "cost": 10,
+      "requires": [
+        "Roamer Geobay"
+      ],
+      "image_file": "PRODUCT-GARAGE_MECH.PNG"
+    },
+    "nautilon_chamber": {
+      "owned": false,
+      "name": "Nautilon Chamber",
+      "cost": 10,
+      "requires": [
+        "Roamer Geobay"
+      ],
+      "image_file": "PRODUCT-GARAGE_SUB.PNG"
+    },
+    "pilgrim_geobay": {
+      "owned": false,
+      "name": "Pilgrim Geobay",
+      "cost": 10,
+      "requires": [
+        "Roamer Geobay"
+      ],
+      "image_file": "PRODUCT-GARAGE_B.PNG"
+    },
+    "colossus_geobay": {
+      "owned": false,
+      "name": "Colossus Geobay",
+      "cost": 8,
+      "requires": [
+        "Roamer Geobay"
+      ],
+      "image_file": "PRODUCT-GARAGE_L.PNG"
+    },
+    "race_initiator": {
+      "owned": false,
+      "name": "Race Initiator",
+      "cost": 10,
+      "requires": [
+        "Roamer Geobay"
+      ],
+      "image_file": "PRODUCT-RACE_START.PNG"
+    },
+    "orbital_exocraft_materialiser": {
+      "owned": false,
+      "name": "Orbital Exocraft Materialiser",
+      "cost": 15,
+      "requires": [
+        "Roamer Geobay",
+        "Exocraft Summoning Station"
+      ],
+      "image_file": "PRODUCT-GARAGE_FREIGHT.PNG"
+    },
+    "race_obstacle": {
+      "owned": false,
+      "name": "Race Obstacle",
+      "cost": 10,
+      "requires": [
+        "Roamer Geobay",
+        "Race Initiator"
+      ],
+      "image_file": "PRODUCT-RACE_RAMP.PNG"
+    },
+    "race_force_amplifier": {
+      "owned": false,
+      "name": "Race Force Amplifier",
+      "cost": 10,
+      "requires": [
+        "Roamer Geobay",
+        "Race Initiator"
+      ],
+      "image_file": "PRODUCT-RACE_BOOSTER.PNG"
+    }
+  },
+  "aquatic_construction": {
+    "deepwater_chamber": {
+      "owned": false,
+      "name": "Deepwater Chamber",
+      "cost": 6,
+      "requires": null,
+      "image_file": "PRODUCT-MAINROOM_WATER.PNG"
+    },
+    "marine_shelter": {
+      "owned": false,
+      "name": "Marine Shelter",
+      "cost": 10,
+      "requires": [
+        "Deepwater Chamber"
+      ],
+      "image_file": "PRODUCT-WATERBUBBLE.PNG"
+    },
+    "glass_tunnel": {
+      "owned": false,
+      "name": "Glass Tunnel",
+      "cost": 3,
+      "requires": [
+        "Deepwater Chamber"
+      ],
+      "image_file": "PRODUCT-CORRIDOR_WATER.PNG"
+    },
+    "square_deepwater_chamber": {
+      "owned": false,
+      "name": "Square Deepwater Chamber",
+      "cost": 6,
+      "requires": [
+        "Deepwater Chamber"
+      ],
+      "image_file": "PRODUCT-MAINROOMCUBE_W.PNG"
+    },
+    "watertight_door": {
+      "owned": false,
+      "name": "Watertight Door",
+      "cost": 2,
+      "requires": [
+        "Deepwater Chamber"
+      ],
+      "image_file": "PRODUCT-BUILDDOOR_WATER.PNG"
+    },
+    "large_glass_panel": {
+      "owned": false,
+      "name": "Large Glass Panel",
+      "cost": 1,
+      "requires": [
+        "Deepwater Chamber",
+        "Glass Tunnel"
+      ],
+      "image_file": "PRODUCT-PANEL_GLASS.PNG"
+    },
+    "l-shaped_glass_tunnel": {
+      "owned": false,
+      "name": "L-Shaped Glass Tunnel",
+      "cost": 3,
+      "requires": [
+        "Deepwater Chamber",
+        "Glass Tunnel"
+      ],
+      "image_file": "PRODUCT-CORRIDORL_WATER.PNG"
+    },
+    "vertical_glass_tunnel": {
+      "owned": false,
+      "name": "Vertical Glass Tunnel",
+      "cost": 3,
+      "requires": [
+        "Deepwater Chamber",
+        "Glass Tunnel"
+      ],
+      "image_file": "PRODUCT-CORRIDORV_WATER.PNG"
+    },
+    "moon_pool_floor": {
+      "owned": false,
+      "name": "Moon Pool Floor",
+      "cost": 10,
+      "requires": [
+        "Deepwater Chamber",
+        "Watertight Door"
+      ],
+      "image_file": "PRODUCT-MOONPOOL.PNG"
+    },
+    "t-shaped_glass_tunnel": {
+      "owned": false,
+      "name": "T-Shaped Glass Tunnel",
+      "cost": 3,
+      "requires": [
+        "Deepwater Chamber",
+        "Glass Tunnel",
+        "L-Shaped Glass Tunnel"
+      ],
+      "image_file": "PRODUCT-CORRIDORT_WATER.PNG"
+    },
+    "x-shaped_glass_tunnel": {
+      "owned": false,
+      "name": "X-Shaped Glass Tunnel",
+      "cost": 3,
+      "requires": [
+        "Deepwater Chamber",
+        "Glass Tunnel",
+        "L-Shaped Glass Tunnel"
+      ],
+      "image_file": "PRODUCT-CORRIDORX_WATER.PNG"
+    },
+    "nautilon_chamber": {
+      "owned": false,
+      "name": "Nautilon Chamber",
+      "cost": 10,
+      "requires": [
+        "Deepwater Chamber",
+        "Watertight Door",
+        "Moon Pool Floor"
+      ],
+      "image_file": "PRODUCT-GARAGE_SUB.PNG"
+    }
+  },
+  "decal_designs": {
+    "white_design_decal": {
+      "owned": false,
+      "name": "White Design Decal",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-BUILDDECAL.PNG"
+    },
+    "blue_design_decal": {
+      "owned": false,
+      "name": "Blue Design Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALSIMP1.PNG"
+    },
+    "white_border_decal": {
+      "owned": false,
+      "name": "White Border Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECAL2.PNG"
+    },
+    "'0'_decal": {
+      "owned": false,
+      "name": "'0' Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALNUM0.PNG"
+    },
+    "vy'keen_decal": {
+      "owned": false,
+      "name": "Vy'keen Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALVIS1.PNG"
+    },
+    "green_design_decal": {
+      "owned": false,
+      "name": "Green Design Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "Blue Design Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALSIMP2.PNG"
+    },
+    "red_design_decal": {
+      "owned": false,
+      "name": "Red Design Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "Blue Design Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALSIMP3.PNG"
+    },
+    "black_design_decal": {
+      "owned": false,
+      "name": "Black Design Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "Blue Design Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALSIMP4.PNG"
+    },
+    "atlas_decal": {
+      "owned": false,
+      "name": "Atlas Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "White Border Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALNMS.PNG"
+    },
+    "'1'_decal": {
+      "owned": false,
+      "name": "'1' Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "'0' Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALNUM1.PNG"
+    },
+    "'2'_decal": {
+      "owned": false,
+      "name": "'2' Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "'0' Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALNUM2.PNG"
+    },
+    "gek_decal": {
+      "owned": false,
+      "name": "Gek Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "Vy'keen Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALVIS2.PNG"
+    },
+    "korvax_decal": {
+      "owned": false,
+      "name": "Korvax Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "Vy'keen Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALVIS3.PNG"
+    },
+    "'3'_decal": {
+      "owned": false,
+      "name": "'3' Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "'0' Decal",
+        "'1' Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALNUM3.PNG"
+    },
+    "'5'_decal": {
+      "owned": false,
+      "name": "'5' Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "'0' Decal",
+        "'1' Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALNUM5.PNG"
+    },
+    "'7'_decal": {
+      "owned": false,
+      "name": "'7' Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "'0' Decal",
+        "'1' Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALNUM7.PNG"
+    },
+    "'9'_decal": {
+      "owned": false,
+      "name": "'9' Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "'0' Decal",
+        "'1' Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALNUM9.PNG"
+    },
+    "'4'_decal": {
+      "owned": false,
+      "name": "'4' Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "'0' Decal",
+        "'2' Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALNUM4.PNG"
+    },
+    "'6'_decal": {
+      "owned": false,
+      "name": "'6' Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "'0' Decal",
+        "'2' Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALNUM6.PNG"
+    },
+    "'8'_decal": {
+      "owned": false,
+      "name": "'8' Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "'0' Decal",
+        "'2' Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALNUM8.PNG"
+    },
+    "blob_decal": {
+      "owned": false,
+      "name": "Blob Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "Vy'keen Decal",
+        "Gek Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALVIS4.PNG"
+    },
+    "curious_fauna_decal": {
+      "owned": false,
+      "name": "Curious Fauna Decal",
+      "cost": 1,
+      "requires": [
+        "White Design Decal",
+        "Vy'keen Decal",
+        "Korvax Decal"
+      ],
+      "image_file": "PRODUCT-BUILDDECALVIS5.PNG"
+    }
+  },
+  "posters": {
+    "flight_path_poster": {
+      "owned": false,
+      "name": "Flight Path Poster",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-S_POSTER0.PNG"
+    },
+    "blue_stripes_poster": {
+      "owned": false,
+      "name": "Blue Stripes Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER1.PNG"
+    },
+    "golden_gek_poster": {
+      "owned": false,
+      "name": "Golden Gek Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER2.PNG"
+    },
+    "drone_alert_poster": {
+      "owned": false,
+      "name": "Drone Alert Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER3.PNG"
+    },
+    "pawprints_poster": {
+      "owned": false,
+      "name": "Pawprints Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster",
+        "Blue Stripes Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER4.PNG"
+    },
+    "ship_sale_poster": {
+      "owned": false,
+      "name": "Ship Sale Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster",
+        "Blue Stripes Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER5.PNG"
+    },
+    "korvax_guild_poster": {
+      "owned": false,
+      "name": "Korvax Guild Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster",
+        "Blue Stripes Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER6.PNG"
+    },
+    "korvax_swirl_poster": {
+      "owned": false,
+      "name": "Korvax Swirl Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster",
+        "Golden Gek Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER7.PNG"
+    },
+    "atlas_infinity_poster": {
+      "owned": false,
+      "name": "Atlas Infinity Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster",
+        "Golden Gek Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER8.PNG"
+    },
+    "atlas_race_poster": {
+      "owned": false,
+      "name": "Atlas Race Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster",
+        "Golden Gek Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER9.PNG"
+    },
+    "cactus_flesh_poster": {
+      "owned": false,
+      "name": "Cactus Flesh Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster",
+        "Drone Alert Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER10.PNG"
+    },
+    "gek_hypnosis_poster": {
+      "owned": false,
+      "name": "Gek Hypnosis Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster",
+        "Drone Alert Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER11.PNG"
+    },
+    "falling_shapes_poster": {
+      "owned": false,
+      "name": "Falling Shapes Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster",
+        "Drone Alert Poster"
+      ],
+      "image_file": "PRODUCT-S_POSTER13.PNG"
+    },
+    "vy'keen_poster": {
+      "owned": false,
+      "name": "Vy'Keen Poster",
+      "cost": 1,
+      "requires": [
+        "Flight Path Poster",
+        "Drone Alert Poster"
+      ],
+      "image_file": null
+    }
+  },
+  "decorative_modules_1": {
+    "wall_screen": {
+      "owned": false,
+      "name": "Wall Screen",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-WALLSCREEN.PNG"
+    },
+    "wall_fan": {
+      "owned": false,
+      "name": "Wall Fan",
+      "cost": 1,
+      "requires": [
+        "Wall Screen"
+      ],
+      "image_file": "PRODUCT-WALLFAN.PNG"
+    },
+    "green_wall_screen": {
+      "owned": false,
+      "name": "Green Wall Screen",
+      "cost": 1,
+      "requires": [
+        "Wall Screen"
+      ],
+      "image_file": "PRODUCT-WALLSCREENB.PNG"
+    },
+    "drawers": {
+      "owned": false,
+      "name": "Drawers",
+      "cost": 1,
+      "requires": [
+        "Wall Screen"
+      ],
+      "image_file": "PRODUCT-DRAWS.PNG"
+    },
+    "wall_unit": {
+      "owned": false,
+      "name": "Wall Unit",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Wall Fan"
+      ],
+      "image_file": "PRODUCT-BLDWALLUNIT.PNG"
+    },
+    "storage_panel": {
+      "owned": false,
+      "name": "Storage Panel",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Wall Fan"
+      ],
+      "image_file": "PRODUCT-STORAGEPANEL.PNG"
+    },
+    "orange_wall_screen": {
+      "owned": false,
+      "name": "Orange Wall Screen",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Green Wall Screen"
+      ],
+      "image_file": "PRODUCT-WALLSCREENB2.PNG"
+    },
+    "tech_panel": {
+      "owned": false,
+      "name": "Tech Panel",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Green Wall Screen"
+      ],
+      "image_file": "PRODUCT-TECHPANEL.PNG"
+    },
+    "server": {
+      "owned": false,
+      "name": "Server",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers"
+      ],
+      "image_file": "PRODUCT-SERVERSTACK.PNG"
+    },
+    "canister_rack": {
+      "owned": false,
+      "name": "Canister Rack",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers"
+      ],
+      "image_file": "PRODUCT-BUILDCANRACK.PNG"
+    },
+    "small_crate": {
+      "owned": false,
+      "name": "Small Crate",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers"
+      ],
+      "image_file": "PRODUCT-BUILDAMCRATE.PNG"
+    },
+    "locker": {
+      "owned": false,
+      "name": "Locker",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers"
+      ],
+      "image_file": "PRODUCT-BUILDLOCKER.PNG"
+    },
+    "locked_crate": {
+      "owned": false,
+      "name": "Locked Crate",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers"
+      ],
+      "image_file": "PRODUCT-BUILDLCRATE.PNG"
+    },
+    "small_box": {
+      "owned": false,
+      "name": "Small Box",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers"
+      ],
+      "image_file": "PRODUCT-S_CRATE0.PNG"
+    },
+    "timber_shelving_unit": {
+      "owned": false,
+      "name": "Timber Shelving Unit",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Wall Fan",
+        "Wall Unit"
+      ],
+      "image_file": "PRODUCT-S_SHELVINGUNIT0.PNG"
+    },
+    "flat_panel": {
+      "owned": false,
+      "name": "Flat Panel",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Wall Fan",
+        "Storage Panel"
+      ],
+      "image_file": "PRODUCT-BUILDFLATPANEL.PNG"
+    },
+    "side_panel": {
+      "owned": false,
+      "name": "Side Panel",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Wall Fan",
+        "Storage Panel"
+      ],
+      "image_file": "PRODUCT-BUILDSIDEPANEL.PNG"
+    },
+    "shelf_panel": {
+      "owned": false,
+      "name": "Shelf Panel",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Wall Fan",
+        "Storage Panel"
+      ],
+      "image_file": "PRODUCT-SHELFPANEL.PNG"
+    },
+    "ceiling_panel": {
+      "owned": false,
+      "name": "Ceiling Panel",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Green Wall Screen",
+        "Orange Wall Screen"
+      ],
+      "image_file": "PRODUCT-ROOFMONITOR.PNG"
+    },
+    "weapons_rack": {
+      "owned": false,
+      "name": "Weapons Rack",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Green Wall Screen",
+        "Tech Panel"
+      ],
+      "image_file": null
+    },
+    "oscilloscope": {
+      "owned": false,
+      "name": "Oscilloscope",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Server"
+      ],
+      "image_file": "PRODUCT-BOXEDSCREEN.PNG"
+    },
+    "octa-cabinet": {
+      "owned": false,
+      "name": "Octa-Cabinet",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Small Crate"
+      ],
+      "image_file": "PRODUCT-OCTACABINET.PNG"
+    },
+    "barrel_fabricator": {
+      "owned": false,
+      "name": "Barrel Fabricator",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Small Crate"
+      ],
+      "image_file": "PRODUCT-CRATELCYLINDER.PNG"
+    },
+    "tall_cabinet": {
+      "owned": false,
+      "name": "Tall Cabinet",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Locker"
+      ],
+      "image_file": "PRODUCT-BUILDHCABINET.PNG"
+    },
+    "ventilated_crate": {
+      "owned": false,
+      "name": "Ventilated Crate",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Locked Crate"
+      ],
+      "image_file": "PRODUCT-S_MILKCRATE.PNG"
+    },
+    "moulded_crate": {
+      "owned": false,
+      "name": "Moulded Crate",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Small Box"
+      ],
+      "image_file": "PRODUCT-S_CRATE2.PNG"
+    },
+    "moulded_lockbox": {
+      "owned": false,
+      "name": "Moulded Lockbox",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Small Box"
+      ],
+      "image_file": "PRODUCT-S_CRATE3.PNG"
+    },
+    "tall_moulded_lockbox": {
+      "owned": false,
+      "name": "Tall Moulded Lockbox",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Small Box"
+      ],
+      "image_file": "PRODUCT-S_CRATE4.PNG"
+    },
+    "robotic_arm": {
+      "owned": false,
+      "name": "Robotic Arm",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Green Wall Screen",
+        "Orange Wall Screen",
+        "Ceiling Panel"
+      ],
+      "image_file": "PRODUCT-ROBOTICARM.PNG"
+    },
+    "crate_fabricator": {
+      "owned": false,
+      "name": "Crate Fabricator",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Locked Crate",
+        "Ventilated Crate"
+      ],
+      "image_file": "PRODUCT-CRATELRARE.PNG"
+    },
+    "large_moulded_crate": {
+      "owned": false,
+      "name": "Large Moulded Crate",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Small Box",
+        "Moulded Crate"
+      ],
+      "image_file": "PRODUCT-S_CRATE1.PNG"
+    },
+    "open_moulded_lockbox": {
+      "owned": false,
+      "name": "Open Moulded Lockbox",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Small Box",
+        "Moulded Lockbox"
+      ],
+      "image_file": "PRODUCT-S_CRATE3OPEN.PNG"
+    },
+    "open_tall_moulded_lockbox": {
+      "owned": false,
+      "name": "Open Tall Moulded Lockbox",
+      "cost": 1,
+      "requires": [
+        "Wall Screen",
+        "Drawers",
+        "Small Box",
+        "Tall Moulded Lockbox"
+      ],
+      "image_file": "PRODUCT-S_CRATE4OPEN.PNG"
+    }
+  },
+  "decorative_modules_2": {
+    "desk_chair": {
+      "owned": false,
+      "name": "Desk Chair",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-BUILDCHAIR.PNG"
+    },
+    "armchair": {
+      "owned": false,
+      "name": "Armchair",
+      "cost": 1,
+      "requires": [
+        "Desk Chair"
+      ],
+      "image_file": "PRODUCT-BUILDCHAIR2.PNG"
+    },
+    "flag_1": {
+      "owned": false,
+      "name": "Flag 1",
+      "cost": 1,
+      "requires": [
+        "Desk Chair"
+      ],
+      "image_file": "PRODUCT-FLAG1.PNG"
+    },
+    "round_table": {
+      "owned": false,
+      "name": "Round Table",
+      "cost": 1,
+      "requires": [
+        "Desk Chair"
+      ],
+      "image_file": "PRODUCT-BUILDTABLE.PNG"
+    },
+    "bed": {
+      "owned": false,
+      "name": "Bed",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Armchair"
+      ],
+      "image_file": "PRODUCT-BUILDBED.PNG"
+    },
+    "adjustable_chair": {
+      "owned": false,
+      "name": "Adjustable Chair",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Armchair"
+      ],
+      "image_file": "PRODUCT-BUILDCHAIR3.PNG"
+    },
+    "sofa": {
+      "owned": false,
+      "name": "Sofa",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Armchair"
+      ],
+      "image_file": "PRODUCT-BUILDSOFA.PNG"
+    },
+    "flag_2": {
+      "owned": false,
+      "name": "Flag 2",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Flag 1"
+      ],
+      "image_file": "PRODUCT-FLAG2.PNG"
+    },
+    "wall_flag_1": {
+      "owned": false,
+      "name": "Wall Flag 1",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Flag 1"
+      ],
+      "image_file": "PRODUCT-WALLFLAG1.PNG"
+    },
+    "weathered_hanging": {
+      "owned": false,
+      "name": "Weathered Hanging",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Flag 1"
+      ],
+      "image_file": "PRODUCT-S_WALLHANGING1.PNG"
+    },
+    "hexagonal_table": {
+      "owned": false,
+      "name": "Hexagonal Table",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Round Table"
+      ],
+      "image_file": "PRODUCT-BUILDTABLE2.PNG"
+    },
+    "simple_desk": {
+      "owned": false,
+      "name": "Simple Desk",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Round Table"
+      ],
+      "image_file": "PRODUCT-BUILDSIMPLEDESK.PNG"
+    },
+    "upholstered_chair": {
+      "owned": false,
+      "name": "Upholstered Chair",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Armchair",
+        "Adjustable Chair"
+      ],
+      "image_file": "PRODUCT-S_CHAIR0.PNG"
+    },
+    "swept_sofa": {
+      "owned": false,
+      "name": "Swept Sofa",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Armchair",
+        "Sofa"
+      ],
+      "image_file": "PRODUCT-BUILDSOFA2.PNG"
+    },
+    "corner_sofa": {
+      "owned": false,
+      "name": "Corner Sofa",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Armchair",
+        "Sofa"
+      ],
+      "image_file": "PRODUCT-BUILDSOFA2L.PNG"
+    },
+    "flag_3": {
+      "owned": false,
+      "name": "Flag 3",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Flag 1",
+        "Flag 2"
+      ],
+      "image_file": "PRODUCT-FLAG3.PNG"
+    },
+    "flag_4": {
+      "owned": false,
+      "name": "Flag 4",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Flag 1",
+        "Flag 2"
+      ],
+      "image_file": "PRODUCT-FLAG4.PNG"
+    },
+    "wall_flag_2": {
+      "owned": false,
+      "name": "Wall Flag 2",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Flag 1",
+        "Wall Flag 1"
+      ],
+      "image_file": "PRODUCT-WALLFLAG2.PNG"
+    },
+    "wall_flag_3": {
+      "owned": false,
+      "name": "Wall Flag 3",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Flag 1",
+        "Wall Flag 1"
+      ],
+      "image_file": "PRODUCT-WALLFLAG3.PNG"
+    },
+    "mini_weathered_hangings": {
+      "owned": false,
+      "name": "Mini Weathered Hangings",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Flag 1",
+        "Weathered Hangings"
+      ],
+      "image_file": "PRODUCT-S_WALLHANGING2.PNG"
+    },
+    "weathered_hanging_triptych": {
+      "owned": false,
+      "name": "Weathered Hanging Triptych",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Flag 1",
+        "Weathered Hangings"
+      ],
+      "image_file": "PRODUCT-S_WALLHANGING3.PNG"
+    },
+    "floor_mat": {
+      "owned": false,
+      "name": "Floor Mat",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Round Table",
+        "Hexagonal Table"
+      ],
+      "image_file": "PRODUCT-FLOORMAT1.PNG"
+    },
+    "large_monitor_station": {
+      "owned": false,
+      "name": "Large Monitor Station",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Round Table",
+        "Simple Desk"
+      ],
+      "image_file": "PRODUCT-LARGEDESK.PNG"
+    },
+    "curved_desk": {
+      "owned": false,
+      "name": "Curved Desk",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Round Table",
+        "Simple Desk"
+      ],
+      "image_file": "PRODUCT-CURVEDDESK.PNG"
+    },
+    "monitor_station": {
+      "owned": false,
+      "name": "Monitor Station",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Round Table",
+        "Simple Desk"
+      ],
+      "image_file": "PRODUCT-MONITORDESK.PNG"
+    },
+    "worktop": {
+      "owned": false,
+      "name": "Worktop",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Round Table",
+        "Simple Desk"
+      ],
+      "image_file": "PRODUCT-BUILDWORKTOP.PNG"
+    },
+    "hanging_flag_1": {
+      "owned": false,
+      "name": "Hanging Flag 1",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Wall Flag 1",
+        "Wall Flag 2"
+      ],
+      "image_file": "PRODUCT-S_FLAG5.PNG"
+    },
+    "hanging_flag_2": {
+      "owned": false,
+      "name": "Hanging Flag 2",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Wall Flag 1",
+        "Wall Flag 3"
+      ],
+      "image_file": "PRODUCT-S_FLAG6.PNG"
+    },
+    "light_table": {
+      "owned": false,
+      "name": "Light Table",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Round Table",
+        "Simple Desk",
+        "Large Monitor Station"
+      ],
+      "image_file": "PRODUCT-BUILDLIGHTTABLE.PNG"
+    },
+    "corner_table": {
+      "owned": false,
+      "name": "Corner Table",
+      "cost": 1,
+      "requires": [
+        "Desk Chair",
+        "Round Table",
+        "Simple Desk",
+        "Curved Desk"
+      ],
+      "image_file": "PRODUCT-BUILDTABLE3.PNG"
+    }
+  },
+  "decorative_modules_3": {
+    "ornate_stool": {
+      "owned": false,
+      "name": "Ornate Stool",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-S_BARSTOOL0.PNG"
+    },
+    "golden_counter": {
+      "owned": false,
+      "name": "Golden Counter",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool"
+      ],
+      "image_file": "PRODUCT-S_BAR.PNG"
+    },
+    "golden_table": {
+      "owned": false,
+      "name": "Golden Table",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool"
+      ],
+      "image_file": "PRODUCT-S_BARTABLE0.PNG"
+    },
+    "oil_burner": {
+      "owned": false,
+      "name": "Oil Burner",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool"
+      ],
+      "image_file": "PRODUCT-S_BURNER0.PNG"
+    },
+    "vintage_tap": {
+      "owned": false,
+      "name": "Vintage Tap",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool"
+      ],
+      "image_file": "PRODUCT-S_BARTAPS0.PNG"
+    },
+    "canvas_gazebo": {
+      "owned": false,
+      "name": "Canvas Gazebo",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool"
+      ],
+      "image_file": "PRODUCT-S_GAZEBO0.PNG"
+    },
+    "golden_counter_corner": {
+      "owned": false,
+      "name": "Golden Counter Corner",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Golden Counter"
+      ],
+      "image_file": "PRODUCT-S_BAR_C.PNG"
+    },
+    "golden_half_counter": {
+      "owned": false,
+      "name": "Golden Half Counter",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Golden Counter"
+      ],
+      "image_file": "PRODUCT-S_BAR_H.PNG"
+    },
+    "planetary_globe": {
+      "owned": false,
+      "name": "Planetary Globe",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Golden Table"
+      ],
+      "image_file": "PRODUCT-S_GLOWGLOBE.PNG"
+    },
+    "vintage_dish": {
+      "owned": false,
+      "name": "Vintage Dish",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Oil Burner"
+      ],
+      "image_file": "PRODUCT-S_TRAY0.PNG"
+    },
+    "vintage_tumbler": {
+      "owned": false,
+      "name": "Vintage Tumbler",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Oil Burner"
+      ],
+      "image_file": "PRODUCT-S_CUP0.PNG"
+    },
+    "kiln-fired_pot": {
+      "owned": false,
+      "name": "Kiln-Fired Pot",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Oil Burner"
+      ],
+      "image_file": "PRODUCT-S_POT0.PNG"
+    },
+    "tied_drapes": {
+      "owned": false,
+      "name": "Tied Drapes",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Canvas Gazebo"
+      ],
+      "image_file": "PRODUCT-S_CURTAIN0.PNG"
+    },
+    "kite-patterned_rug": {
+      "owned": false,
+      "name": "Kite-Patterned Rug",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Canvas Gazebo"
+      ],
+      "image_file": "PRODUCT-S_RUG0.PNG"
+    },
+    "rolled_canvas": {
+      "owned": false,
+      "name": "Rolled Canvas",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Canvas Gazebo"
+      ],
+      "image_file": "PRODUCT-S_FABROLL0.PNG"
+    },
+    "canvas_awning": {
+      "owned": false,
+      "name": "Canvas Awning",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Canvas Gazebo"
+      ],
+      "image_file": "PRODUCT-S_CANOPY_WALL0.PNG"
+    },
+    "vintage_cooking_pan": {
+      "owned": false,
+      "name": "Vintage Cooking Pan",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Oil Burner",
+        "Vintage Dish"
+      ],
+      "image_file": "PRODUCT-S_PAN0.PNG"
+    },
+    "vintage_teapot": {
+      "owned": false,
+      "name": "Vintage Teapot",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Oil Burner",
+        "Vintage Tumbler"
+      ],
+      "image_file": "PRODUCT-S_TABLEPOT0.PNG"
+    },
+    "opulent_tapestry": {
+      "owned": false,
+      "name": "Opulent Tapestry",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Canvas Gazebo",
+        "Tied Drapes"
+      ],
+      "image_file": "PRODUCT-S_DRAPE0.PNG"
+    },
+    "circle-patterned_rug": {
+      "owned": false,
+      "name": "Circle-Patterned Rug",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Canvas Gazebo",
+        "Kite-Patterned Rug"
+      ],
+      "image_file": "PRODUCT-S_RUG1.PNG"
+    },
+    "rolled_canvas_pile": {
+      "owned": false,
+      "name": "Rolled Canvas Pile",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Canvas Gazebo",
+        "Rolled Canvas"
+      ],
+      "image_file": "PRODUCT-S_FABROLLPILE0.PNG"
+    },
+    "twin_flag_awning": {
+      "owned": false,
+      "name": "Twin Flag Awning",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Canvas Gazebo",
+        "Canvas Awning"
+      ],
+      "image_file": "PRODUCT-S_CANOPY_WALL1.PNG"
+    },
+    "quad_flag_awning": {
+      "owned": false,
+      "name": "Quad Flag Awning",
+      "cost": 1,
+      "requires": [
+        "Ornate Stool",
+        "Canvas Gazebo",
+        "Canvas Awning"
+      ],
+      "image_file": "PRODUCT-S_CANOPY_WALL2.PNG"
+    }
+  },
+  "decorative_modules_4": {
+    "stepladder": {
+      "owned": false,
+      "name": "Stepladder",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-S_STEPLADDER.PNG"
+    },
+    "wash_trough": {
+      "owned": false,
+      "name": "Wash Trough",
+      "cost": 1,
+      "requires": [
+        "Stepladder"
+      ],
+      "image_file": "PRODUCT-S_TROUGH0.PNG"
+    },
+    "scissor_lift": {
+      "owned": false,
+      "name": "Scissor Lift",
+      "cost": 1,
+      "requires": [
+        "Stepladder"
+      ],
+      "image_file": "PRODUCT-S_SCISSORLIFT.PNG"
+    },
+    "cement_mixer": {
+      "owned": false,
+      "name": "Cement Mixer",
+      "cost": 1,
+      "requires": [
+        "Stepladder"
+      ],
+      "image_file": "PRODUCT-S_CEMENTMIXER.PNG"
+    },
+    "wooden_pallet": {
+      "owned": false,
+      "name": "Wooden Pallet",
+      "cost": 1,
+      "requires": [
+        "Stepladder"
+      ],
+      "image_file": "PRODUCT-S_PALLET.PNG"
+    },
+    "barricade": {
+      "owned": false,
+      "name": "Barricade",
+      "cost": 1,
+      "requires": [
+        "Stepladder"
+      ],
+      "image_file": "PRODUCT-S_BARRIER.PNG"
+    },
+    "large_tyre": {
+      "owned": false,
+      "name": "Large Tyre",
+      "cost": 1,
+      "requires": [
+        "Stepladder"
+      ],
+      "image_file": "PRODUCT-S_LARGETRYE0.PNG"
+    },
+    "shovel": {
+      "owned": false,
+      "name": "Shovel",
+      "cost": 1,
+      "requires": [
+        "Stepladder"
+      ],
+      "image_file": "PRODUCT-S_SHOVEL.PNG"
+    },
+    "stone_trough": {
+      "owned": false,
+      "name": "Stone Trough",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Wash Trough"
+      ],
+      "image_file": "PRODUCT-S_PLANTER_M.PNG"
+    },
+    "scaffolding": {
+      "owned": false,
+      "name": "Scaffolding",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Scissor Lift"
+      ],
+      "image_file": "PRODUCT-S_SCAFFOLD_M.PNG"
+    },
+    "large_scaffolding": {
+      "owned": false,
+      "name": "Large Scaffolding",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Scissor Lift"
+      ],
+      "image_file": "PRODUCT-S_SCAFFOLD_L.PNG"
+    },
+    "cement_bag": {
+      "owned": false,
+      "name": "Cement Bag",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Cement Mixer"
+      ],
+      "image_file": "PRODUCT-S_CEMENTBAG.PNG"
+    },
+    "wheelbarrow": {
+      "owned": false,
+      "name": "Wheelbarrow",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Cement Mixer"
+      ],
+      "image_file": "PRODUCT-S_WHEELBARROW.PNG"
+    },
+    "brick_pile": {
+      "owned": false,
+      "name": "Brick Pile",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Wooden Pallet"
+      ],
+      "image_file": "PRODUCT-S_PALLET_BRICK.PNG"
+    },
+    "h-beam_stack": {
+      "owned": false,
+      "name": "H-Beam Stack",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Wooden Pallet"
+      ],
+      "image_file": "PRODUCT-S_RSJSTACK.PNG"
+    },
+    "panelled_timber_divider": {
+      "owned": false,
+      "name": "Panelled Timber Divider",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Barricade"
+      ],
+      "image_file": "PRODUCT-S_FENCE0.PNG"
+    },
+    "propped_timber_dividers": {
+      "owned": false,
+      "name": "Propped Timber Dividers",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Barricade"
+      ],
+      "image_file": null
+    },
+    "drawn_cart": {
+      "owned": false,
+      "name": "Drawn Cart",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Large Tyre"
+      ],
+      "image_file": "PRODUCT-S_CARRIAGE.PNG"
+    },
+    "cart_wheel": {
+      "owned": false,
+      "name": "Cart Wheel",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Large Tyre"
+      ],
+      "image_file": "PRODUCT-S_CARRIAGEWHEEL.PNG"
+    },
+    "pail": {
+      "owned": false,
+      "name": "Pail",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Shovel"
+      ],
+      "image_file": "PRODUCT-S_BUCKET_S.PNG"
+    },
+    "excavation_claw": {
+      "owned": false,
+      "name": "Excavation Claw",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Shovel"
+      ],
+      "image_file": "PRODUCT-S_EXCBUCKET.PNG"
+    },
+    "covered_brick_pile": {
+      "owned": false,
+      "name": "Covered Brick Pile",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Wooden Pallet",
+        "Brick Pile"
+      ],
+      "image_file": "PRODUCT-S_BRICKSWRAPPED.PNG"
+    },
+    "propped_timber_divider": {
+      "owned": false,
+      "name": "Propped Timber Divider",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Barricade",
+        "Panelled Timber Divider"
+      ],
+      "image_file": "PRODUCT-S_FENCE1.PNG"
+    },
+    "propped_flag_dividers": {
+      "owned": false,
+      "name": "Propped Flag Dividers",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Barricade",
+        "Panelled Timber Dividers"
+      ],
+      "image_file": "PRODUCT-S_FENCE3.PNG"
+    },
+    "tall_bucket": {
+      "owned": false,
+      "name": "Tall Bucket",
+      "cost": 1,
+      "requires": [
+        "Stepladder",
+        "Shovel",
+        "Pail"
+      ],
+      "image_file": "PRODUCT-S_BUCKET_M.PNG"
+    }
+  },
+  "decorative_modules_5": {
+    "spark_plug": {
+      "owned": false,
+      "name": "Spark Plug",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-S_SPARKPLUG.PNG"
+    },
+    "composter": {
+      "owned": false,
+      "name": "Composter",
+      "cost": 1,
+      "requires": [
+        "Spark Plug"
+      ],
+      "image_file": "PRODUCT-S_COMPOSTBIN.PNG"
+    },
+    "small_generator": {
+      "owned": false,
+      "name": "Small Generator",
+      "cost": 1,
+      "requires": [
+        "Spark Plug"
+      ],
+      "image_file": "PRODUCT-S_GENERATOR.PNG"
+    },
+    "dish_receptor_antenna": {
+      "owned": false,
+      "name": "Dish Receptor Antenna",
+      "cost": 1,
+      "requires": [
+        "Spark Plug"
+      ],
+      "image_file": "PRODUCT-S_ANTENNA0.PNG"
+    },
+    "sealed_barrel": {
+      "owned": false,
+      "name": "Sealed Barrel",
+      "cost": 1,
+      "requires": [
+        "Spark Plug"
+      ],
+      "image_file": "PRODUCT-S_BARREL1.PNG"
+    },
+    "small_furnace": {
+      "owned": false,
+      "name": "Small Furnace",
+      "cost": 1,
+      "requires": [
+        "Spark Plug",
+        "Composter"
+      ],
+      "image_file": "PRODUCT-S_FURNACE.PNG"
+    },
+    "industrial_pump": {
+      "owned": false,
+      "name": "Industrial Pump",
+      "cost": 1,
+      "requires": [
+        "Spark Plug",
+        "Small Generator"
+      ],
+      "image_file": "PRODUCT-S_PUMP.PNG"
+    },
+    "cyclonic_lathe": {
+      "owned": false,
+      "name": "Cyclonic Lathe",
+      "cost": 1,
+      "requires": [
+        "Spark Plug",
+        "Small Generator"
+      ],
+      "image_file": "PRODUCT-S_MACHINE0.PNG"
+    },
+    "reinforced_capsule": {
+      "owned": false,
+      "name": "Reinforced Capsule",
+      "cost": 1,
+      "requires": [
+        "Spark Plug",
+        "Small Generator"
+      ],
+      "image_file": "PRODUCT-S_CANISTER0.PNG"
+    },
+    "tall_antenna": {
+      "owned": false,
+      "name": "Tall Antenna",
+      "cost": 1,
+      "requires": [
+        "Spark Plug",
+        "Dish Receptor Antenna"
+      ],
+      "image_file": "PRODUCT-S_ANTENNA1.PNG"
+    },
+    "dual-pronged_antenna": {
+      "owned": false,
+      "name": "Dual-Pronged Antenna",
+      "cost": 1,
+      "requires": [
+        "Spark Plug",
+        "Dish Receptor Antenna"
+      ],
+      "image_file": "PRODUCT-S_ANTENNA2.PNG"
+    },
+    "meteorological_spinner": {
+      "owned": false,
+      "name": "Meteorological Spinner",
+      "cost": 1,
+      "requires": [
+        "Spark Plug",
+        "Dish Receptor Antenna"
+      ],
+      "image_file": "PRODUCT-S_ANTENNA3.PNG"
+    },
+    "sealed_reservoir": {
+      "owned": false,
+      "name": "Sealed Reservoir",
+      "cost": 1,
+      "requires": [
+        "Spark Plug",
+        "Sealed Barrel"
+      ],
+      "image_file": "PRODUCT-S_WATERVALVE0.PNG"
+    },
+    "water_tower": {
+      "owned": false,
+      "name": "Water Tower",
+      "cost": 1,
+      "requires": [
+        "Spark Plug",
+        "Small Generator",
+        "Industral Pump"
+      ],
+      "image_file": "PRODUCT-S_WATERTOWER.PNG"
+    },
+    "gas_canister": {
+      "owned": false,
+      "name": "Gas Canister",
+      "cost": 1,
+      "requires": [
+        "Spark Plug",
+        "Small Generator",
+        "Reinforced Capsule"
+      ],
+      "image_file": "PRODUCT-S_CANISTER1.PNG"
+    },
+    "insulated_flask": {
+      "owned": false,
+      "name": "Insulated Flask",
+      "cost": 1,
+      "requires": [
+        "Spark Plug",
+        "Small Generator",
+        "Reinforced Capsule"
+      ],
+      "image_file": "PRODUCT-S_MILKBOTTLE.PNG"
+    }
+  },
+  "illumination": {
+    "lantern": {
+      "owned": false,
+      "name": "Lantern",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-SMALLLIGHT.PNG"
+    },
+    "white_light": {
+      "owned": false,
+      "name": "White Light",
+      "cost": 1,
+      "requires": [
+        "Lantern"
+      ],
+      "image_file": "PRODUCT-WALLLIGHTWHITE.PNG"
+    },
+    "squared_standing_light": {
+      "owned": false,
+      "name": "Squared Standing Light",
+      "cost": 1,
+      "requires": [
+        "Lantern"
+      ],
+      "image_file": "PRODUCT-BUILDLIGHT.PNG"
+    },
+    "lab_lamp": {
+      "owned": false,
+      "name": "Lab Lamp",
+      "cost": 1,
+      "requires": [
+        "Lantern"
+      ],
+      "image_file": "PRODUCT-BUILDLABLAMP.PNG"
+    },
+    "table_lamp": {
+      "owned": false,
+      "name": "Table Lamp",
+      "cost": 1,
+      "requires": [
+        "Lantern"
+      ],
+      "image_file": "PRODUCT-S_TABLELAMP0.PNG"
+    },
+    "wall_light": {
+      "owned": false,
+      "name": "Wall Light",
+      "cost": 1,
+      "requires": [
+        "Lantern"
+      ],
+      "image_file": "PRODUCT-S_WALLLIGHT0.PNG"
+    },
+    "ceiling_light": {
+      "owned": false,
+      "name": "Ceiling Light",
+      "cost": 1,
+      "requires": [
+        "Lantern"
+      ],
+      "image_file": "PRODUCT-CEILINGLIGHT.PNG"
+    },
+    "blue_light": {
+      "owned": false,
+      "name": "Blue Light",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "White Light"
+      ],
+      "image_file": "PRODUCT-WALLLIGHTBLUE.PNG"
+    },
+    "red_light": {
+      "owned": false,
+      "name": "Red Light",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "White Light"
+      ],
+      "image_file": "PRODUCT-WALLLIGHTRED.PNG"
+    },
+    "rounded_standing_light": {
+      "owned": false,
+      "name": "Rounded Standing Light",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "Squared Standing Light"
+      ],
+      "image_file": "PRODUCT-BUILDLIGHT2.PNG"
+    },
+    "capped_standing_light": {
+      "owned": false,
+      "name": "Capped Standing Light",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "Squared Standing Light"
+      ],
+      "image_file": "PRODUCT-BUILDLIGHT3.PNG"
+    },
+    "illuminated_sign": {
+      "owned": false,
+      "name": "Illuminated Sign",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "Wall Light"
+      ],
+      "image_file": "PRODUCT-S_SIGN_BAR0.PNG"
+    },
+    "hanging_lamp": {
+      "owned": false,
+      "name": "Hanging Lamp",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "Ceiling Light"
+      ],
+      "image_file": "PRODUCT-S_HANGLAMP0.PNG"
+    },
+    "tube_light": {
+      "owned": false,
+      "name": "Tube Light",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "Ceiling Light"
+      ],
+      "image_file": "PRODUCT-S_LIGHTSTRIP0.PNG"
+    },
+    "yellow_light": {
+      "owned": false,
+      "name": "Yellow Light",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "White Light",
+        "Blue Light"
+      ],
+      "image_file": "PRODUCT-WALLLIGHTYELLOW.PNG"
+    },
+    "green_light": {
+      "owned": false,
+      "name": "Green Light",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "White Light",
+        "Blue Light"
+      ],
+      "image_file": "PRODUCT-WALLLIGHTGREEN.PNG"
+    },
+    "pink_light": {
+      "owned": false,
+      "name": "Pink Light",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "White Light",
+        "Red Light"
+      ],
+      "image_file": "PRODUCT-WALLLIGHTPINK.PNG"
+    },
+    "lamp_post": {
+      "owned": false,
+      "name": "Lamp Post",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "Squared Standing Light",
+        "Capped Standing Light"
+      ],
+      "image_file": "PRODUCT-S_STREETLAMP0.PNG"
+    },
+    "triple_hanging_lamp": {
+      "owned": false,
+      "name": "Triple Hanging Lamp",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "Ceiling Light",
+        "Hanging Lamp"
+      ],
+      "image_file": "PRODUCT-S_HANGLAMP1.PNG"
+    },
+    "circles_hanging_lamp": {
+      "owned": false,
+      "name": "Circles Hanging Lamp",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "Ceiling Light",
+        "Hanging Lamp"
+      ],
+      "image_file": "PRODUCT-S_HANGLAMP2.PNG"
+    },
+    "splayed_hanging_lamp": {
+      "owned": false,
+      "name": "Splayed Hanging Lamp",
+      "cost": 1,
+      "requires": [
+        "Lantern",
+        "Ceiling Light",
+        "Hanging Lamp"
+      ],
+      "image_file": "PRODUCT-S_HANGLAMP3.PNG"
+    }
+  },
+  "industrial_modules": {
+    "electrical_wiring": {
+      "owned": false,
+      "name": "Electrical Wiring",
+      "cost": 0,
+      "requires": null,
+      "image_file": "PRODUCT-U_POWERLINE.PNG"
+    },
+    "biofuel_reactor": {
+      "owned": false,
+      "name": "Biofuel Reactor",
+      "cost": 1,
+      "requires": [
+        "Electrical Wiring"
+      ],
+      "image_file": "PRODUCT-U_BIOGENERATOR.PNG"
+    },
+    "mineral_extractor": {
+      "owned": false,
+      "name": "Mineral Extractor",
+      "cost": 10,
+      "requires": [
+        "Electrical Wiring"
+      ],
+      "image_file": "PRODUCT-U_EXTRACTOR_S.PNG"
+    },
+    "wall_switch": {
+      "owned": false,
+      "name": "Wall Switch",
+      "cost": 1,
+      "requires": [
+        "Electrical Wiring"
+      ],
+      "image_file": "PRODUCT-U_SWITCHWALL.PNG"
+    },
+    "electrical_cloaking_unit": {
+      "owned": false,
+      "name": "Electrical Cloaking Unit",
+      "cost": 1,
+      "requires": [
+        "Electrical Wiring",
+        "Biofuel Reactor"
+      ],
+      "image_file": "PRODUCT-POWERLINE_HIDER.PNG"
+    },
+    "solar_panel": {
+      "owned": false,
+      "name": "Solar Panel",
+      "cost": 8,
+      "requires": [
+        "Electrical Wiring",
+        "Biofuel Reactor"
+      ],
+      "image_file": "PRODUCT-U_SOLAR_S.PNG"
+    },
+    "battery": {
+      "owned": false,
+      "name": "Battery",
+      "cost": 3,
+      "requires": [
+        "Electrical Wiring",
+        "Biofuel Reactor"
+      ],
+      "image_file": "PRODUCT-U_BATTERY_S.PNG"
+    },
+    "gas_extractor": {
+      "owned": false,
+      "name": "Gas Extractor",
+      "cost": 10,
+      "requires": [
+        "Electrical Wiring",
+        "Mineral Extractor"
+      ],
+      "image_file": "PRODUCT-U_GASEXTRACTOR.PNG"
+    },
+    "supply_depot": {
+      "owned": false,
+      "name": "Supply Depot",
+      "cost": 10,
+      "requires": [
+        "Electrical Wiring",
+        "Mineral Extractor"
+      ],
+      "image_file": "PRODUCT-U_SILO_S.PNG"
+    },
+    "supply_pipe": {
+      "owned": false,
+      "name": "Supply Pipe",
+      "cost": 1,
+      "requires": [
+        "Electrical Wiring",
+        "Mineral Extractor"
+      ],
+      "image_file": "PRODUCT-U_PIPELINE.PNG"
+    },
+    "floor_switch": {
+      "owned": false,
+      "name": "Floor Switch",
+      "cost": 1,
+      "requires": [
+        "Electrical Wiring",
+        "Wall Switch"
+      ],
+      "image_file": "PRODUCT-U_SWITCHPRESS.PNG"
+    },
+    "proximity_switch": {
+      "owned": false,
+      "name": "Proximity Switch",
+      "cost": 1,
+      "requires": [
+        "Electrical Wiring",
+        "Wall Switch"
+      ],
+      "image_file": "PRODUCT-U_SWITCHPROX.PNG"
+    },
+    "button": {
+      "owned": false,
+      "name": "Button",
+      "cost": 1,
+      "requires": [
+        "Electrical Wiring",
+        "Wall Switch"
+      ],
+      "image_file": "PRODUCT-U_SWITCHBUTTON.PNG"
+    },
+    "power_inverter": {
+      "owned": false,
+      "name": "Power Inverter",
+      "cost": 1,
+      "requires": [
+        "Electrical Wiring",
+        "Wall Switch"
+      ],
+      "image_file": "PRODUCT-U_TRANSISTOR1.PNG"
+    },
+    "auto_switch": {
+      "owned": false,
+      "name": "Auto Switch",
+      "cost": 1,
+      "requires": [
+        "Electrical Wiring",
+        "Wall Switch"
+      ],
+      "image_file": "PRODUCT-U_TRANSISTOR2.PNG"
+    },
+    "electromagnetic_generator": {
+      "owned": false,
+      "name": "Electromagnetic Generator",
+      "cost": 10,
+      "requires": [
+        "Electrical Wiring",
+        "Biofuel Reactor",
+        "Solar Panel"
+      ],
+      "image_file": "PRODUCT-U_GENERATOR_S.PNG"
+    }
+  },
+  "agricultural_modules": {
+    "hydroponic_tray": {
+      "owned": false,
+      "name": "Hydroponic Tray",
+      "cost": 3,
+      "requires": null,
+      "image_file": "PRODUCT-PLANTER.PNG"
+    },
+    "potted_plant": {
+      "owned": false,
+      "name": "Potted Plant",
+      "cost": 1,
+      "requires": [
+        "Hydroponic Tray"
+      ],
+      "image_file": "PRODUCT-PLANTPOT.PNG"
+    },
+    "large_hydroponic_tray": {
+      "owned": false,
+      "name": "Large Hydroponic Tray",
+      "cost": 10,
+      "requires": [
+        "Hydroponic Tray"
+      ],
+      "image_file": "PRODUCT-PLANTERMEGA.PNG"
+    },
+    "fungal_cluster": {
+      "owned": false,
+      "name": "Fungal Cluster",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray"
+      ],
+      "image_file": "PRODUCT-TOXICPLANT.PNG"
+    },
+    "frostwort": {
+      "owned": false,
+      "name": "Frostwort",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray"
+      ],
+      "image_file": "PRODUCT-SNOWPLANT.PNG"
+    },
+    "gamma_weed": {
+      "owned": false,
+      "name": "Gamma Weed",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray"
+      ],
+      "image_file": "PRODUCT-RADIOPLANT.PNG"
+    },
+    "echinocactus": {
+      "owned": false,
+      "name": "Echinocactus",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray"
+      ],
+      "image_file": "PRODUCT-BARRENPLANT.PNG"
+    },
+    "star_bramble": {
+      "owned": false,
+      "name": "Star Bramble",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray"
+      ],
+      "image_file": "PRODUCT-LUSHPLANT.PNG"
+    },
+    "solar_vine": {
+      "owned": false,
+      "name": "Solar Vine",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray"
+      ],
+      "image_file": "PRODUCT-SCORCHEDPLANT.PNG"
+    },
+    "standing_planter": {
+      "owned": false,
+      "name": "Standing Planter",
+      "cost": 1,
+      "requires": [
+        "Hydroponic Tray",
+        "Potted Plant"
+      ],
+      "image_file": "PRODUCT-CARBONPLANTER.PNG"
+    },
+    "flora_containment_1": {
+      "owned": false,
+      "name": "Flora Containment 1",
+      "cost": 1,
+      "requires": [
+        "Hydroponic Tray",
+        "Potted Plant"
+      ],
+      "image_file": "PRODUCT-PLANTPOT1.PNG"
+    },
+    "flora_containment_2": {
+      "owned": false,
+      "name": "Flora Containment 2",
+      "cost": 1,
+      "requires": [
+        "Hydroponic Tray",
+        "Potted Plant"
+      ],
+      "image_file": "PRODUCT-PLANTPOT2.PNG"
+    },
+    "flora_containment_3": {
+      "owned": false,
+      "name": "Flora Containment 3",
+      "cost": 1,
+      "requires": [
+        "Hydroponic Tray",
+        "Potted Plant"
+      ],
+      "image_file": "PRODUCT-PLANTPOT3.PNG"
+    },
+    "venom_urchin": {
+      "owned": false,
+      "name": "Venom Urchin",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray",
+        "Fungal Cluster"
+      ],
+      "image_file": "PRODUCT-SACVENOMPLANT.PNG"
+    },
+    "gravitino_host": {
+      "owned": false,
+      "name": "Gravitino Host",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray",
+        "Frostwort"
+      ],
+      "image_file": "PRODUCT-GRAVPLANT.PNG"
+    },
+    "gutrot_flower": {
+      "owned": false,
+      "name": "Gutrot Flower",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray",
+        "Gamma Weed"
+      ],
+      "image_file": "PRODUCT-POOPPLANT.PNG"
+    },
+    "mordite_root": {
+      "owned": false,
+      "name": "Mordite Root",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray",
+        "Echinocactus"
+      ],
+      "image_file": "PRODUCT-CREATUREPLANT.PNG"
+    },
+    "albumen_pearl_orb": {
+      "owned": false,
+      "name": "Albumen Pearl Orb",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray",
+        "Star Bramble"
+      ],
+      "image_file": "PRODUCT-PEARLPLANT.PNG"
+    },
+    "nipnip": {
+      "owned": false,
+      "name": "NipNip",
+      "cost": 3,
+      "requires": [
+        "Hydroponic Tray",
+        "Solar Vine"
+      ],
+      "image_file": "PRODUCT-NIPPLANT.PNG"
+    }
+  },
+  "timber_structures": {
+    "timber_wall": {
+      "owned": false,
+      "name": "Timber Wall",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-T_WALL.PNG"
+    },
+    "timber_floor_panel": {
+      "owned": false,
+      "name": "Timber Floor Panel",
+      "cost": 1,
+      "requires": [
+        "Timber Wall"
+      ],
+      "image_file": "PRODUCT-T_FLOOR.PNG"
+    },
+    "thin_timber_wall": {
+      "owned": false,
+      "name": "Thin Timber Wall",
+      "cost": 1,
+      "requires": [
+        "Timber Wall"
+      ],
+      "image_file": "PRODUCT-T_WALL_H.PNG"
+    },
+    "extruded_timber_wall_a": {
+      "owned": false,
+      "name": "Extruded Timber Wall A",
+      "cost": 1,
+      "requires": [
+        "Timber Wall"
+      ],
+      "image_file": "PRODUCT-T_CHEV_WALL.PNG"
+    },
+    "timber_doorway": {
+      "owned": false,
+      "name": "Timber Doorway",
+      "cost": 2,
+      "requires": [
+        "Timber Wall"
+      ],
+      "image_file": "PRODUCT-T_DOOR_H.PNG"
+    },
+    "timber-framed_glass_panel": {
+      "owned": false,
+      "name": "Timber-Framed Glass Panel",
+      "cost": 3,
+      "requires": [
+        "Timber Wall",
+        "Timber Floor Panel"
+      ],
+      "image_file": "PRODUCT-T_GFLOOR.PNG"
+    },
+    "timber_ramp": {
+      "owned": false,
+      "name": "Timber Ramp",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Timber Floor Panel"
+      ],
+      "image_file": "PRODUCT-T_RAMP.PNG"
+    },
+    "timber_triangle": {
+      "owned": false,
+      "name": "Timber Triangle",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Timber Floor Panel"
+      ],
+      "image_file": "PRODUCT-T_TRIFLOOR.PNG"
+    },
+    "sloping_timber_panel": {
+      "owned": false,
+      "name": "Sloping Timber Panel",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Thin Timber Wall"
+      ],
+      "image_file": "PRODUCT-T_WALLDIAGONAL.PNG"
+    },
+    "small_timber_wall_a": {
+      "owned": false,
+      "name": "Small Timber Wall A",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Thin Timber Wall"
+      ],
+      "image_file": "PRODUCT-T_WALL_Q.PNG"
+    },
+    "short_timber_wall_a": {
+      "owned": false,
+      "name": "Short Timber Wall A",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Thin Timber Wall"
+      ],
+      "image_file": "PRODUCT-T_WALL_Q_H.PNG"
+    },
+    "extruded_timber-glass_door": {
+      "owned": false,
+      "name": "Extruded Timber-Glass Door",
+      "cost": 2,
+      "requires": [
+        "Timber Wall",
+        "Extruded Timber Wall A"
+      ],
+      "image_file": "PRODUCT-T_CHEV_DOOR.PNG"
+    },
+    "extruded_timber_wall_cap": {
+      "owned": false,
+      "name": "Extruded Timber Wall Cap",
+      "cost": 3,
+      "requires": [
+        "Timber Wall",
+        "Extruded Timber Wall A"
+      ],
+      "image_file": "PRODUCT-T_CHEV_WALL_H_C.PNG"
+    },
+    "extruded_timber_wall_b": {
+      "owned": false,
+      "name": "Extruded Timber Wall B",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Extruded Timber Wall A"
+      ],
+      "image_file": "PRODUCT-T_CHEV_WIN0.PNG"
+    },
+    "timber_frontage": {
+      "owned": false,
+      "name": "Timber Frontage",
+      "cost": 2,
+      "requires": [
+        "Timber Wall",
+        "Timber Doorway"
+      ],
+      "image_file": "PRODUCT-T_DOORWINDOW.PNG"
+    },
+    "timber_rectangular_door": {
+      "owned": false,
+      "name": "Timber Rectangular Door",
+      "cost": 2,
+      "requires": [
+        "Timber Wall",
+        "Timber Doorway"
+      ],
+      "image_file": "PRODUCT-T_DOOR.PNG"
+    },
+    "timber_power_door": {
+      "owned": false,
+      "name": "Timber Power Door",
+      "cost": 2,
+      "requires": [
+        "Timber Wall",
+        "Timber Doorway"
+      ],
+      "image_file": "PRODUCT-T_GDOOR.PNG"
+    },
+    "timber_arch": {
+      "owned": false,
+      "name": "Timber Arch",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Timber Doorway"
+      ],
+      "image_file": "PRODUCT-T_ARCH.PNG"
+    },
+    "small_timber_panel": {
+      "owned": false,
+      "name": "Small Timber Panel",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Timber Floor Panel",
+        "Timber-Framed Glass Panel"
+      ],
+      "image_file": "PRODUCT-T_FLOOR_Q.PNG"
+    },
+    "timber_half_ramp": {
+      "owned": false,
+      "name": "Timber Half Ramp",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Timber Floor Panel",
+        "Timber Ramp"
+      ],
+      "image_file": "PRODUCT-T_RAMP_H.PNG"
+    },
+    "small_timber_triangle": {
+      "owned": false,
+      "name": "Small Timber Triangle",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Timber Floor Panel",
+        "Timber Triangle"
+      ],
+      "image_file": "PRODUCT-T_TRIFLOOR_Q.PNG"
+    },
+    "small_timber_wall_b": {
+      "owned": false,
+      "name": "Small Timber Wall B",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Thin Timber Wall",
+        "Small Timber Wall A"
+      ],
+      "image_file": "PRODUCT-T_WALL_Q1.PNG"
+    },
+    "short_timber_wall_b": {
+      "owned": false,
+      "name": "Short Timber Wall B",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Thin Timber Wall",
+        "Short Timber Wall A"
+      ],
+      "image_file": "PRODUCT-T_WALL_Q_H1.PNG"
+    },
+    "extruded_timber_large_window": {
+      "owned": false,
+      "name": "Extruded Timber Large Window",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Thin Timber Wall",
+        "Extruded Timber Wall B"
+      ],
+      "image_file": "PRODUCT-T_CHEV_WIN1.PNG"
+    },
+    "horizontal_timber_windows": {
+      "owned": false,
+      "name": "Horizontal Timber Windows",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Timber Doorway",
+        "Timber Frontage"
+      ],
+      "image_file": "PRODUCT-T_WALL_WIN1.PNG"
+    },
+    "twin_timber_windows": {
+      "owned": false,
+      "name": "Twin Timber Windows",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Timber Doorway",
+        "Timber Frontage"
+      ],
+      "image_file": "PRODUCT-T_WALL_WINDOW.PNG"
+    },
+    "timber_angled_door": {
+      "owned": false,
+      "name": "Timber Angled Door",
+      "cost": 2,
+      "requires": [
+        "Timber Wall",
+        "Timber Doorway",
+        "Timber Rectangular Door"
+      ],
+      "image_file": "PRODUCT-T_DOOR1.PNG"
+    },
+    "timber_half_arch": {
+      "owned": false,
+      "name": "Timber Half Arch",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Timber Doorway",
+        "Timber Arch"
+      ],
+      "image_file": "PRODUCT-T_ARCH_H.PNG"
+    },
+    "timber_half_ramp_platform": {
+      "owned": false,
+      "name": "Timber Half Ramp Platform",
+      "cost": 3,
+      "requires": [
+        "Timber Wall",
+        "Timber Floor Panel",
+        "Timber Ramp",
+        "Timber Half Ramp"
+      ],
+      "image_file": "PRODUCT-T_RAMP_Q_TOP.PNG"
+    },
+    "extruded_timber_small_window": {
+      "owned": false,
+      "name": "Extruded Timber Small Window",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Extruded Timber Wall A",
+        "Extruded Timber Wall B",
+        "Extruded Timber Large Window"
+      ],
+      "image_file": "PRODUCT-T_CHEV_WIN2.PNG"
+    },
+    "large_timber_double_window": {
+      "owned": false,
+      "name": "Large Timber Double Window",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Timber Doorway",
+        "Timber Frontage",
+        "Horizontal Timber Windows"
+      ],
+      "image_file": "PRODUCT-T_WALL_WIN2.PNG"
+    },
+    "large_timber_triple_window": {
+      "owned": false,
+      "name": "Large Timber Triple Window",
+      "cost": 1,
+      "requires": [
+        "Timber Wall",
+        "Timber Doorway",
+        "Timber Frontage",
+        "Horizontal Timber Windows"
+      ],
+      "image_file": "PRODUCT-T_WALL_WIN3.PNG"
+    }
+  },
+  "timber_roofing": {
+    "flat_timber_roof": {
+      "owned": false,
+      "name": "Flat Timber Roof",
+      "cost": 2,
+      "requires": null,
+      "image_file": "PRODUCT-T_ROOF6.PNG"
+    },
+    "timber_roof_panel": {
+      "owned": false,
+      "name": "Timber Roof Panel",
+      "cost": 1,
+      "requires": [
+        "Flat Timber Roof"
+      ],
+      "image_file": "PRODUCT-T_ROOF_M.PNG"
+    },
+    "timber_roof_corner": {
+      "owned": false,
+      "name": "Timber Roof Corner",
+      "cost": 1,
+      "requires": [
+        "Flat Timber Roof"
+      ],
+      "image_file": "PRODUCT-T_ROOF_C.PNG"
+    },
+    "timber_roof_cap": {
+      "owned": false,
+      "name": "Timber Roof Cap",
+      "cost": 1,
+      "requires": [
+        "Flat Timber Roof"
+      ],
+      "image_file": "PRODUCT-T_ROOF_M_CAP.PNG"
+    },
+    "asymmetrical_timber-glass_roof": {
+      "owned": false,
+      "name": "Asymmetrical Timber-Glass Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Timber Roof"
+      ],
+      "image_file": "PRODUCT-T_ROOF1.PNG"
+    },
+    "rounded_flat_timber-glass_roof": {
+      "owned": false,
+      "name": "Rounded Flat Timber-Glass Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Timber Roof"
+      ],
+      "image_file": "PRODUCT-T_ROOF0.PNG"
+    },
+    "folded_sail_timber_roof": {
+      "owned": false,
+      "name": "Folded Sail Timber Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Timber Roof"
+      ],
+      "image_file": "PRODUCT-T_ROOF3.PNG"
+    },
+    "sloping_timber_roof_panel": {
+      "owned": false,
+      "name": "Sloping Timber Roof Panel",
+      "cost": 1,
+      "requires": [
+        "Flat Timber Roof",
+        "Timber Roof Panel"
+      ],
+      "image_file": "PRODUCT-T_ROOF_M_Q.PNG"
+    },
+    "timber_inner_roof_corner": {
+      "owned": false,
+      "name": "Timber Inner Roof Corner",
+      "cost": 1,
+      "requires": [
+        "Flat Timber Roof",
+        "Timber Roof Corner"
+      ],
+      "image_file": "PRODUCT-T_ROOF_IC.PNG"
+    },
+    "timber_roof_gable": {
+      "owned": false,
+      "name": "Timber Roof Gable",
+      "cost": 1,
+      "requires": [
+        "Flat Timber Roof",
+        "Timber Roof Cap"
+      ],
+      "image_file": "PRODUCT-T_ROOF_E_CAP.PNG"
+    },
+    "l-skylight_timber_roof": {
+      "owned": false,
+      "name": "L-Skylight Timber Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Timber Roof",
+        "Asymmetrical Timber-Glass Roof"
+      ],
+      "image_file": "PRODUCT-T_ROOF2.PNG"
+    },
+    "rounded_timber_roof": {
+      "owned": false,
+      "name": "Rounded Timber Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Timber Roof",
+        "Rounded Flat Timber-Glass Roof"
+      ],
+      "image_file": "PRODUCT-T_ROOF7.PNG"
+    },
+    "draped_sail_timber_roof": {
+      "owned": false,
+      "name": "Draped Sail Timber Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Timber Roof",
+        "Folded Sail Timber Roof"
+      ],
+      "image_file": "PRODUCT-T_ROOF5.PNG"
+    },
+    "sloping_timber_roof_gable": {
+      "owned": false,
+      "name": "Sloping Timber Roof Gable",
+      "cost": 1,
+      "requires": [
+        "Flat Timber Roof",
+        "Timber Roof Panel",
+        "Sloping Timber Roof Panel"
+      ],
+      "image_file": "PRODUCT-T_ROOF_E_Q.PNG"
+    },
+    "u-skylight_timber_trapezoid_roof": {
+      "owned": false,
+      "name": "U-Skylight Timber Trapezoid Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Timber Roof",
+        "Asymmetrical Timber-Glass Roof",
+        "L-Skylight Timber Roof"
+      ],
+      "image_file": null
+    }
+  },
+  "stone_structures": {
+    "stone_wall": {
+      "owned": false,
+      "name": "Stone Wall",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-S_WALL.PNG"
+    },
+    "stone_floor_panel": {
+      "owned": false,
+      "name": "Stone Floor Panel",
+      "cost": 1,
+      "requires": [
+        "Stone Wall"
+      ],
+      "image_file": "PRODUCT-S_FLOOR.PNG"
+    },
+    "thin_stone_wall": {
+      "owned": false,
+      "name": "Thin Stone Wall",
+      "cost": 1,
+      "requires": [
+        "Stone Wall"
+      ],
+      "image_file": "PRODUCT-S_WALL_H.PNG"
+    },
+    "extruded_stone_wall": {
+      "owned": false,
+      "name": "Extruded Stone Wall",
+      "cost": 1,
+      "requires": [
+        "Stone Wall"
+      ],
+      "image_file": "PRODUCT-S_CHEV_WALL.PNG"
+    },
+    "stone_doorway": {
+      "owned": false,
+      "name": "Stone Doorway",
+      "cost": 2,
+      "requires": [
+        "Stone Wall"
+      ],
+      "image_file": "PRODUCT-S_DOOR_H.PNG"
+    },
+    "stone_floor_grille": {
+      "owned": false,
+      "name": "Stone Floor Grille",
+      "cost": 3,
+      "requires": [
+        "Stone Wall",
+        "Stone Floor Panel"
+      ],
+      "image_file": "PRODUCT-S_GFLOOR.PNG"
+    },
+    "stone_ramp": {
+      "owned": false,
+      "name": "Stone Ramp",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Stone Floor Panel"
+      ],
+      "image_file": "PRODUCT-S_RAMP.PNG"
+    },
+    "stone_triangle": {
+      "owned": false,
+      "name": "Stone Triangle",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Stone Floor Panel"
+      ],
+      "image_file": "PRODUCT-S_TRIFLOOR.PNG"
+    },
+    "sloping_stone_panel": {
+      "owned": false,
+      "name": "Sloping Stone Panel",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Thin Stone Wall"
+      ],
+      "image_file": "PRODUCT-S_WALLDIAGONAL.PNG"
+    },
+    "small_stone_wall_a": {
+      "owned": false,
+      "name": "Small Stone Wall A",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Thin Stone Wall"
+      ],
+      "image_file": "PRODUCT-S_WALL_Q.PNG"
+    },
+    "short_stone_wall_a": {
+      "owned": false,
+      "name": "Short Stone Wall A",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Thin Stone Wall"
+      ],
+      "image_file": "PRODUCT-S_WALL_Q_H.PNG"
+    },
+    "extruded_stone_door": {
+      "owned": false,
+      "name": "Extruded Stone Door",
+      "cost": 2,
+      "requires": [
+        "Stone Wall",
+        "Extruded Stone Wall"
+      ],
+      "image_file": "PRODUCT-S_CHEV_DOOR.PNG"
+    },
+    "extruded_stone_wall_cap": {
+      "owned": false,
+      "name": "Extruded Stone Wall Cap",
+      "cost": 3,
+      "requires": [
+        "Stone Wall",
+        "Extruded Stone Wall"
+      ],
+      "image_file": "PRODUCT-S_CHEV_WALL_H_C.PNG"
+    },
+    "extruded_panelled_stone_wall": {
+      "owned": false,
+      "name": "Extruded Panelled Stone Wall",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Extruded Stone Wall"
+      ],
+      "image_file": null
+    },
+    "stone_frontage": {
+      "owned": false,
+      "name": "Stone Frontage",
+      "cost": 2,
+      "requires": [
+        "Stone Wall",
+        "Stone Doorway"
+      ],
+      "image_file": "PRODUCT-S_DOORWINDOW.PNG"
+    },
+    "stone_arch_door": {
+      "owned": false,
+      "name": "Stone Arch Door",
+      "cost": 2,
+      "requires": [
+        "Stone Wall",
+        "Stone Doorway"
+      ],
+      "image_file": "PRODUCT-S_DOOR.PNG"
+    },
+    "stone_power_door": {
+      "owned": false,
+      "name": "Stone Power Door",
+      "cost": 2,
+      "requires": [
+        "Stone Wall",
+        "Stone Doorway"
+      ],
+      "image_file": "PRODUCT-S_GDOOR.PNG"
+    },
+    "stone_arch": {
+      "owned": false,
+      "name": "Stone Arch",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Stone Doorway"
+      ],
+      "image_file": "PRODUCT-S_ARCH.PNG"
+    },
+    "small_stone_panel": {
+      "owned": false,
+      "name": "Small Stone Panel",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Stone Floor Panel",
+        "Stone Floor Grille"
+      ],
+      "image_file": "PRODUCT-S_FLOOR_Q.PNG"
+    },
+    "stone_half_ramp": {
+      "owned": false,
+      "name": "Stone Half Ramp",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Stone Floor Panel",
+        "Stone Ramp"
+      ],
+      "image_file": "PRODUCT-S_RAMP_H.PNG"
+    },
+    "small_stone_triangle": {
+      "owned": false,
+      "name": "Small Stone Triangle",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Stone Floor Panel",
+        "Stone Triangle"
+      ],
+      "image_file": "PRODUCT-S_TRIFLOOR_Q.PNG"
+    },
+    "small_stone_wall_b": {
+      "owned": false,
+      "name": "Small Stone Wall B",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Thin Stone Wall",
+        "Small Stone Wall A"
+      ],
+      "image_file": "PRODUCT-S_WALL_Q1.PNG"
+    },
+    "short_stone_wall_b": {
+      "owned": false,
+      "name": "Short Stone Wall B",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Thin Stone Wall",
+        "Short Stone Wall A"
+      ],
+      "image_file": "PRODUCT-S_WALL_Q_H1.PNG"
+    },
+    "stone_support_pillar": {
+      "owned": false,
+      "name": "Stone Support Pillar",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Extruded Stone Wall",
+        "Extruded Stone Wall Cap"
+      ],
+      "image_file": "PRODUCT-S_WALL_SUPPORTS.PNG"
+    },
+    "extruded_stone_small_window": {
+      "owned": false,
+      "name": "Extruded Stone Small Window",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Extruded Stone Wall",
+        "Extruded Panelled Stone Wall"
+      ],
+      "image_file": null
+    },
+    "stone_grille_window": {
+      "owned": false,
+      "name": "Stone Grille Window",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Stone Doorway",
+        "Stone Frontage"
+      ],
+      "image_file": "PRODUCT-S_WALL_WIN1.PNG"
+    },
+    "stone_slit_window": {
+      "owned": false,
+      "name": "Stone Slit Window",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Stone Doorway",
+        "Stone Frontage"
+      ],
+      "image_file": "PRODUCT-S_WALL_WINDOW.PNG"
+    },
+    "stone_rectangular_door": {
+      "owned": false,
+      "name": "Stone Rectangular Door",
+      "cost": 2,
+      "requires": [
+        "Stone Wall",
+        "Stone Doorway",
+        "Stone Arch Door"
+      ],
+      "image_file": "PRODUCT-S_DOOR1.PNG"
+    },
+    "stone_half_arch": {
+      "owned": false,
+      "name": "Stone Half Arch",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Stone Doorway",
+        "Stone Arch"
+      ],
+      "image_file": "PRODUCT-S_ARCH_H.PNG"
+    },
+    "stone_half_ramp_platform": {
+      "owned": false,
+      "name": "Stone Half Ramp Platform",
+      "cost": 3,
+      "requires": [
+        "Stone Wall",
+        "Stone Floor Panel",
+        "Stone Ramp",
+        "Stone Half Ramp"
+      ],
+      "image_file": "PRODUCT-S_RAMP_Q_TOP.PNG"
+    },
+    "extruded_stone_large_window": {
+      "owned": false,
+      "name": "Extruded Stone Large Window",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Extruded Stone Wall",
+        "Extruded Panelled Stone Wall",
+        "Extruded Stone Small Window"
+      ],
+      "image_file": null
+    },
+    "stone_large_window": {
+      "owned": false,
+      "name": "Stone Large Window",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Stone Doorway",
+        "Stone Frontage",
+        "Stone Grille Window"
+      ],
+      "image_file": "PRODUCT-S_WALL_WIN2.PNG"
+    },
+    "stone_circle_window": {
+      "owned": false,
+      "name": "Stone Circle Window",
+      "cost": 1,
+      "requires": [
+        "Stone Wall",
+        "Stone Doorway",
+        "Stone Frontage",
+        "Stone Grille Window"
+      ],
+      "image_file": "PRODUCT-S_WALL_WIN3.PNG"
+    }
+  },
+  "stone_roofing": {
+    "flat_stone_roof": {
+      "owned": false,
+      "name": "Flat Stone Roof",
+      "cost": 2,
+      "requires": null,
+      "image_file": "PRODUCT-S_ROOF3.PNG"
+    },
+    "stone_roof_panel": {
+      "owned": false,
+      "name": "Stone Roof Panel",
+      "cost": 1,
+      "requires": [
+        "Flat Stone Roof"
+      ],
+      "image_file": "PRODUCT-S_ROOF_M.PNG"
+    },
+    "stone_roof_corner": {
+      "owned": false,
+      "name": "Stone Roof Corner",
+      "cost": 1,
+      "requires": [
+        "Flat Stone Roof"
+      ],
+      "image_file": "PRODUCT-S_ROOF_C.PNG"
+    },
+    "stone_roof_cap": {
+      "owned": false,
+      "name": "Stone Roof Cap",
+      "cost": 1,
+      "requires": [
+        "Flat Stone Roof"
+      ],
+      "image_file": "PRODUCT-S_ROOF_M_CAP.PNG"
+    },
+    "angled_flat_stone_roof": {
+      "owned": false,
+      "name": "Angled Flat Stone Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Stone Roof"
+      ],
+      "image_file": "PRODUCT-S_ROOF2.PNG"
+    },
+    "rounded_flat_stone_roof": {
+      "owned": false,
+      "name": "Rounded Flat Stone Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Stone Roof"
+      ],
+      "image_file": "PRODUCT-S_ROOF0.PNG"
+    },
+    "stone_dome_roof": {
+      "owned": false,
+      "name": "Stone Dome Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Stone Roof"
+      ],
+      "image_file": "PRODUCT-S_ROOF5.PNG"
+    },
+    "sloping_stone_roof_panel": {
+      "owned": false,
+      "name": "Sloping Stone Roof Panel",
+      "cost": 1,
+      "requires": [
+        "Flat Stone Roof",
+        "Stone Roof Panel"
+      ],
+      "image_file": "PRODUCT-S_ROOF_M_Q.PNG"
+    },
+    "stone_inner_roof_corner": {
+      "owned": false,
+      "name": "Stone Inner Roof Corner",
+      "cost": 1,
+      "requires": [
+        "Flat Stone Roof",
+        "Stone Roof Corner"
+      ],
+      "image_file": "PRODUCT-S_ROOF_IC.PNG"
+    },
+    "stone_roof_gable": {
+      "owned": false,
+      "name": "Stone Roof Gable",
+      "cost": 1,
+      "requires": [
+        "Flat Stone Roof",
+        "Stone Roof Cap"
+      ],
+      "image_file": "PRODUCT-S_ROOF_E_CAP.PNG"
+    },
+    "ventilated_flat_stone_roof": {
+      "owned": false,
+      "name": "Ventilated Flat Stone Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Stone Roof",
+        "Angled Flat Stone Roof"
+      ],
+      "image_file": "PRODUCT-S_ROOF1.PNG"
+    },
+    "sloping_stone_roof_gable": {
+      "owned": false,
+      "name": "Sloping Stone Roof Gable",
+      "cost": 1,
+      "requires": [
+        "Flat Stone Roof",
+        "Stone Roof Panel",
+        "Sloping Stone Roof Panel"
+      ],
+      "image_file": "PRODUCT-S_ROOF_E_Q.PNG"
+    },
+    "canvas_stone_roof": {
+      "owned": false,
+      "name": "Canvas Stone Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Stone Roof",
+        "Angled Flat Stone Roof",
+        "Ventilated Flat Stone Roof"
+      ],
+      "image_file": "PRODUCT-S_ROOF4.PNG"
+    }
+  },
+  "alloy_structures": {
+    "alloy_wall": {
+      "owned": false,
+      "name": "Alloy Wall",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-F_WALL.PNG"
+    },
+    "alloy_floor_panel": {
+      "owned": false,
+      "name": "Alloy Floor Panel",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall"
+      ],
+      "image_file": "PRODUCT-F_FLOOR.PNG"
+    },
+    "thin_alloy_wall": {
+      "owned": false,
+      "name": "Thin Alloy Wall",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall"
+      ],
+      "image_file": "PRODUCT-F_WALL_H.PNG"
+    },
+    "extruded_alloy_wall": {
+      "owned": false,
+      "name": "Extruded Alloy Wall",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall"
+      ],
+      "image_file": "PRODUCT-F_CHEV_WALL.PNG"
+    },
+    "alloy_doorway": {
+      "owned": false,
+      "name": "Alloy Doorway",
+      "cost": 2,
+      "requires": [
+        "Alloy Wall"
+      ],
+      "image_file": "PRODUCT-F_DOOR_H.PNG"
+    },
+    "alloy-framed_glass_panel": {
+      "owned": false,
+      "name": "Alloy-Framed Glass Panel",
+      "cost": 3,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Floor Panel"
+      ],
+      "image_file": "PRODUCT-F_GFLOOR.PNG"
+    },
+    "alloy_ramp": {
+      "owned": false,
+      "name": "Alloy Ramp",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Floor Panel"
+      ],
+      "image_file": "PRODUCT-F_RAMP.PNG"
+    },
+    "alloy_triangle": {
+      "owned": false,
+      "name": "Alloy Triangle",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Floor Panel"
+      ],
+      "image_file": "PRODUCT-F_TRIFLOOR.PNG"
+    },
+    "sloping_alloy_panel": {
+      "owned": false,
+      "name": "Sloping Alloy Panel",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Thin Alloy Wall"
+      ],
+      "image_file": "PRODUCT-F_WALLDIAGONAL.PNG"
+    },
+    "small_alloy_wall_a": {
+      "owned": false,
+      "name": "Small Alloy Wall A",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Thin Alloy Wall"
+      ],
+      "image_file": "PRODUCT-F_WALL_Q.PNG"
+    },
+    "short_alloy_wall_a": {
+      "owned": false,
+      "name": "Short Alloy Wall A",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Thin Alloy Wall"
+      ],
+      "image_file": "PRODUCT-F_WALL_Q_H.PNG"
+    },
+    "extruded_alloy_door": {
+      "owned": false,
+      "name": "Extruded Alloy Door",
+      "cost": 2,
+      "requires": [
+        "Alloy Wall",
+        "Extruded Alloy Wall"
+      ],
+      "image_file": "PRODUCT-F_CHEV_DOOR.PNG"
+    },
+    "extruded_alloy_wall_cap": {
+      "owned": false,
+      "name": "Extruded Alloy Wall Cap",
+      "cost": 3,
+      "requires": [
+        "Alloy Wall",
+        "Extruded Alloy Wall"
+      ],
+      "image_file": "PRODUCT-F_CHEV_WALL_H_C.PNG"
+    },
+    "extruded_alloy_window": {
+      "owned": false,
+      "name": "Extruded Alloy Window",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Extruded Alloy Wall"
+      ],
+      "image_file": "PRODUCT-F_CHEV_WIN0.PNG"
+    },
+    "alloy_frontage": {
+      "owned": false,
+      "name": "Alloy Frontage",
+      "cost": 2,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Doorway"
+      ],
+      "image_file": "PRODUCT-F_DOORWINDOW.PNG"
+    },
+    "alloy_door_a": {
+      "owned": false,
+      "name": "Alloy Door A",
+      "cost": 2,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Doorway"
+      ],
+      "image_file": "PRODUCT-F_DOOR.PNG"
+    },
+    "alloy_power_door": {
+      "owned": false,
+      "name": "Alloy Power Door",
+      "cost": 2,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Doorway"
+      ],
+      "image_file": "PRODUCT-F_GDOOR.PNG"
+    },
+    "alloy_arch": {
+      "owned": false,
+      "name": "Alloy Arch",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Doorway"
+      ],
+      "image_file": "PRODUCT-F_ARCH.PNG"
+    },
+    "small_alloy_panel": {
+      "owned": false,
+      "name": "Small Alloy Panel",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Floor Panel",
+        "Alloy-Framed Glass Panel"
+      ],
+      "image_file": "PRODUCT-F_FLOOR_Q.PNG"
+    },
+    "alloy_half_ramp": {
+      "owned": false,
+      "name": "Alloy Half Ramp",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Floor Panel",
+        "Alloy Ramp"
+      ],
+      "image_file": "PRODUCT-F_RAMP_H.PNG"
+    },
+    "small_alloy_triangle": {
+      "owned": false,
+      "name": "Small Alloy Triangle",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Floor Panel",
+        "Alloy Triangle"
+      ],
+      "image_file": "PRODUCT-F_TRIFLOOR_Q.PNG"
+    },
+    "small_alloy_wall_b": {
+      "owned": false,
+      "name": "Small Alloy Wall B",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Thin Alloy Wall",
+        "Small Alloy Wall A"
+      ],
+      "image_file": "PRODUCT-F_WALL_Q1.PNG"
+    },
+    "short_alloy_wall_b": {
+      "owned": false,
+      "name": "Short Alloy Wall B",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Thin Alloy Wall",
+        "Short Alloy Wall A"
+      ],
+      "image_file": "PRODUCT-F_WALL_Q_H1.PNG"
+    },
+    "extruded_alloy_horizontal_window": {
+      "owned": false,
+      "name": "Extruded Alloy Horizontal Window",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Extruded Alloy Wall",
+        "Extruded Alloy Window"
+      ],
+      "image_file": "PRODUCT-F_CHEV_WIN1.PNG"
+    },
+    "irregular_alloy_window": {
+      "owned": false,
+      "name": "Irregular Alloy Window",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Doorway",
+        "Alloy Frontage"
+      ],
+      "image_file": "PRODUCT-F_WALL_WIN1.PNG"
+    },
+    "alloy_window": {
+      "owned": false,
+      "name": "Alloy Window",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Doorway",
+        "Alloy Frontage"
+      ],
+      "image_file": "PRODUCT-F_WALL_WINDOW.PNG"
+    },
+    "alloy_door_b": {
+      "owned": false,
+      "name": "Alloy Door B",
+      "cost": 2,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Doorway",
+        "Alloy Door A"
+      ],
+      "image_file": "PRODUCT-F_DOOR1.PNG"
+    },
+    "alloy_half_arch": {
+      "owned": false,
+      "name": "Alloy Half Arch",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Doorway",
+        "Alloy Arch"
+      ],
+      "image_file": "PRODUCT-F_ARCH_H.PNG"
+    },
+    "alloy_half_ramp_platform": {
+      "owned": false,
+      "name": "Alloy Half Ramp Platform",
+      "cost": 3,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Floor Panel",
+        "Alloy Ramp",
+        "Alloy Half Ramp"
+      ],
+      "image_file": "PRODUCT-F_RAMP_Q_TOP.PNG"
+    },
+    "extruded_alloy_small_window": {
+      "owned": false,
+      "name": "Extruded Alloy Small Window",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Extruded Alloy Wall",
+        "Extruded Alloy Window",
+        "Extruded Alloy Horizontal Window"
+      ],
+      "image_file": "PRODUCT-F_CHEV_WIN2.PNG"
+    },
+    "twin_alloy_windows": {
+      "owned": false,
+      "name": "Twin Alloy Windows",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Doorway",
+        "Alloy Frontage",
+        "Irregular Alloy Window"
+      ],
+      "image_file": "PRODUCT-F_WALL_WIN2.PNG"
+    },
+    "horizontal_alloy_window": {
+      "owned": false,
+      "name": "Horizontal Alloy Window",
+      "cost": 1,
+      "requires": [
+        "Alloy Wall",
+        "Alloy Doorway",
+        "Alloy Frontage",
+        "Irregular Alloy Window"
+      ],
+      "image_file": "PRODUCT-F_WALL_WIN3.PNG"
+    }
+  },
+  "alloy_roofing": {
+    "flat_alloy_roof": {
+      "owned": false,
+      "name": "Flat Alloy Roof",
+      "cost": 2,
+      "requires": null,
+      "image_file": "PRODUCT-F_ROOF7.PNG"
+    },
+    "alloy_roof_panel": {
+      "owned": false,
+      "name": "Alloy Roof Panel",
+      "cost": 1,
+      "requires": [
+        "Flat Alloy Roof"
+      ],
+      "image_file": "PRODUCT-F_ROOF_M.PNG"
+    },
+    "alloy_roof_corner": {
+      "owned": false,
+      "name": "Alloy Roof Corner",
+      "cost": 1,
+      "requires": [
+        "Flat Alloy Roof"
+      ],
+      "image_file": "PRODUCT-F_ROOF_C.PNG"
+    },
+    "alloy_roof_cap": {
+      "owned": false,
+      "name": "Alloy Roof Cap",
+      "cost": 1,
+      "requires": [
+        "Flat Alloy Roof"
+      ],
+      "image_file": "PRODUCT-F_ROOF_M_CAP.PNG"
+    },
+    "tall_flat_alloy_roof": {
+      "owned": false,
+      "name": "Tall Flat Alloy Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Alloy Roof"
+      ],
+      "image_file": "PRODUCT-F_ROOF1.PNG"
+    },
+    "skylight_alloy_roof": {
+      "owned": false,
+      "name": "Skylight Alloy Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Alloy Roof"
+      ],
+      "image_file": "PRODUCT-F_ROOF2.PNG"
+    },
+    "angled_flat_alloy_roof": {
+      "owned": false,
+      "name": "Angled Flat Alloy Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Alloy Roof"
+      ],
+      "image_file": "PRODUCT-F_ROOF5.PNG"
+    },
+    "folded_sail_alloy_roof": {
+      "owned": false,
+      "name": "Folded Sail Alloy Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Alloy Roof"
+      ],
+      "image_file": "PRODUCT-F_ROOF4.PNG"
+    },
+    "sloping_alloy_roof_panel": {
+      "owned": false,
+      "name": "Sloping Alloy Roof Panel",
+      "cost": 1,
+      "requires": [
+        "Flat Alloy Roof",
+        "Alloy Roof Panel"
+      ],
+      "image_file": "PRODUCT-F_ROOF_M_Q.PNG"
+    },
+    "alloy_inner_roof_corner": {
+      "owned": false,
+      "name": "Alloy Inner Roof Corner",
+      "cost": 1,
+      "requires": [
+        "Flat Alloy Roof",
+        "Alloy Roof Corner"
+      ],
+      "image_file": "PRODUCT-F_ROOF_IC.PNG"
+    },
+    "alloy_roof_gable": {
+      "owned": false,
+      "name": "Alloy Roof Gable",
+      "cost": 1,
+      "requires": [
+        "Flat Alloy Roof",
+        "Alloy Roof Cap"
+      ],
+      "image_file": "PRODUCT-F_ROOF_E_CAP.PNG"
+    },
+    "side-lit_flat_alloy_roof": {
+      "owned": false,
+      "name": "Side-Lit Flat Alloy Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Alloy Roof",
+        "Tall Flat Alloy Roof"
+      ],
+      "image_file": "PRODUCT-F_ROOF0.PNG"
+    },
+    "elaborate_alloy_roof": {
+      "owned": false,
+      "name": "Elaborate Alloy Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Alloy Roof",
+        "Angled Flat Alloy Roof"
+      ],
+      "image_file": "PRODUCT-F_ROOF6.PNG"
+    },
+    "raised_platform_alloy_roof": {
+      "owned": false,
+      "name": "Raised Platform Alloy Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Alloy Roof",
+        "Angled Flat Alloy Roof"
+      ],
+      "image_file": "PRODUCT-F_ROOF8.PNG"
+    },
+    "sloping_alloy_roof_gable": {
+      "owned": false,
+      "name": "Sloping Alloy Roof Gable",
+      "cost": 1,
+      "requires": [
+        "Flat Alloy Roof",
+        "Alloy Roof Panel",
+        "Sloping Alloy Roof Panel"
+      ],
+      "image_file": "PRODUCT-F_ROOF_E_Q.PNG"
+    },
+    "top-lit_flat_alloy_roof": {
+      "owned": false,
+      "name": "Top-Lit Flat Alloy Roof",
+      "cost": 2,
+      "requires": [
+        "Flat Alloy Roof",
+        "Tall Flat Alloy Roof",
+        "Side-Lit Flat Alloy Roof"
+      ],
+      "image_file": "PRODUCT-F_ROOF3.PNG"
+    }
+  },
+  "primitive_shapes": {
+    "large_wedge": {
+      "owned": false,
+      "name": "Large Wedge",
+      "cost": 1,
+      "requires": null,
+      "image_file": "PRODUCT-WEDGESHAPE.PNG"
+    },
+    "small_wedge": {
+      "owned": false,
+      "name": "Small Wedge",
+      "cost": 1,
+      "requires": [
+        "Large Wedge"
+      ],
+      "image_file": "PRODUCT-WEDGESMALLSHAPE.PNG"
+    },
+    "pipe": {
+      "owned": false,
+      "name": "Pipe",
+      "cost": 1,
+      "requires": [
+        "Large Wedge"
+      ],
+      "image_file": "PRODUCT-PIPE.PNG"
+    },
+    "pyramid": {
+      "owned": false,
+      "name": "Pyramid",
+      "cost": 1,
+      "requires": [
+        "Large Wedge",
+        "Small Wedge"
+      ],
+      "image_file": "PRODUCT-PYRAMIDSHAPE.PNG"
+    },
+    "solid_cube": {
+      "owned": false,
+      "name": "Solid Cube",
+      "cost": 1,
+      "requires": [
+        "Large Wedge",
+        "Pipe"
+      ],
+      "image_file": "PRODUCT-CUBESOLID.PNG"
+    },
+    "cylinder": {
+      "owned": false,
+      "name": "Cylinder",
+      "cost": 1,
+      "requires": [
+        "Large Wedge",
+        "Pipe"
+      ],
+      "image_file": "PRODUCT-CYLINDERSHAPE.PNG"
+    },
+    "cube": {
+      "owned": false,
+      "name": "Cube",
+      "cost": 1,
+      "requires": [
+        "Large Wedge",
+        "Pipe",
+        "Solid Cube"
+      ],
+      "image_file": "PRODUCT-CUBESHAPE.PNG"
+    },
+    "sphere": {
+      "owned": false,
+      "name": "Sphere",
+      "cost": 1,
+      "requires": [
+        "Large Wedge",
+        "Pipe",
+        "Cylinder"
+      ],
+      "image_file": "PRODUCT-SPHERESHAPE.PNG"
+    }
+  },
+  "storage_units": {
+    "storage_container_0": {
+      "owned": false,
+      "name": "Storage Container 0",
+      "cost": 5,
+      "requires": null,
+      "image_file": null
+    },
+    "storage_container_1": {
+      "owned": false,
+      "name": "Storage Container 1",
+      "cost": 5,
+      "requires": [
+        "Storage Container 0"
+      ],
+      "image_file": null
+    },
+    "storage_container_4": {
+      "owned": false,
+      "name": "Storage Container 4",
+      "cost": 5,
+      "requires": [
+        "Storage Container 0"
+      ],
+      "image_file": null
+    },
+    "storage_container_7": {
+      "owned": false,
+      "name": "Storage Container 7",
+      "cost": 5,
+      "requires": [
+        "Storage Container 0"
+      ],
+      "image_file": null
+    },
+    "storage_container_2": {
+      "owned": false,
+      "name": "Storage Container 2",
+      "cost": 5,
+      "requires": [
+        "Storage Container 0",
+        "Storage Container 1"
+      ],
+      "image_file": null
+    },
+    "storage_container_3": {
+      "owned": false,
+      "name": "Storage Container 3",
+      "cost": 5,
+      "requires": [
+        "Storage Container 0",
+        "Storage Container 1"
+      ],
+      "image_file": null
+    },
+    "storage_container_5": {
+      "owned": false,
+      "name": "Storage Container 5",
+      "cost": 5,
+      "requires": [
+        "Storage Container 0",
+        "Storage Container 4"
+      ],
+      "image_file": null
+    },
+    "storage_container_6": {
+      "owned": false,
+      "name": "Storage Container 6",
+      "cost": 5,
+      "requires": [
+        "Storage Container 0",
+        "Storage Container 4"
+      ],
+      "image_file": null
+    },
+    "storage_container_8": {
+      "owned": false,
+      "name": "Storage Container 8",
+      "cost": 5,
+      "requires": [
+        "Storage Container 0",
+        "Storage Container 7"
+      ],
+      "image_file": null
+    },
+    "storage_container_9": {
+      "owned": false,
+      "name": "Storage Container 9",
+      "cost": 5,
+      "requires": [
+        "Storage Container 0",
+        "Storage Container 7"
+      ],
+      "image_file": null
+    }
+  }
+}

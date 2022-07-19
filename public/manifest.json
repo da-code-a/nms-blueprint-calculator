@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "NMS Blueprints",
+  "name": "No Man's Sky Blueprint Calculator",
   "icons": [
     {
       "src": "favicon.ico",

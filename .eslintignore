@@ -1,6 +1,0 @@
-# Remove build folder from ESLint
-# Build folder included in git for
-# serving through Flask, although
-# this breaks typical React convention
-
-nms_blueprint_calculator/react_assets/*

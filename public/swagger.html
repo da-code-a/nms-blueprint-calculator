@@ -1,0 +1,30 @@
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Swagger UI</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static/css/swagger-ui.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static/css/index.css') }}" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="A simple web-app for calculating blueprint costs in No Man's Sky"
+    />
+    <meta
+      name="author"
+      content="Dakota Brown <dakota.kae.brown@gmail.com>"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  </head>
+
+  <body>
+    <div id="swagger-ui"></div>
+    <script src="{{ url_for('static', filename='static/js/swagger-ui-bundle.js') }}" charset="UTF-8"> </script>
+    <script src="{{ url_for('static', filename='static/js/swagger-ui-standalone-preset.js') }}" charset="UTF-8"> </script>
+    <script src="{{ url_for('static', filename='static/js/swagger-initializer.js') }}" charset="UTF-8"> </script>
+  </body>
+</html>

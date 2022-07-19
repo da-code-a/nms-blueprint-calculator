@@ -20,7 +20,9 @@ app.secret_key = os.getenv("COOKIE_SIGNING_KEY", generate_id())
 
 db = firestore.Client()
 
-with open(pathlib.Path(__file__).parent.resolve() / "static/blueprints.json", "r") as f:
+with open(
+    pathlib.Path(__file__).parent.resolve() / "react_assets/static/blueprints.json", "r"
+) as f:
     base_state = load(f)
 
 
