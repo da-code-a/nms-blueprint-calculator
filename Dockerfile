@@ -3,7 +3,7 @@ FROM python:3.9
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV POETRY_VERSION 1.1.13
-ENV PATH="${PATH}:/root/.poetry/bin"
+ENV PATH="${PATH}:/root/.local/bin"
 
 RUN pip install -U pip \
     && apt-get update \
