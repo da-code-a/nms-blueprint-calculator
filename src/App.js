@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { getBlueprintsByCategory } from "./services/BlueprintService";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { Puff } from "react-loader-spinner";
@@ -7,7 +7,9 @@ import "./App.css";
 
 function App() {
 
-  var loading = true;
+  var [loading] = useState({});
+
+  loading = true;
 
   var blueprints = null;
   getBlueprintsByCategory().then(response => {
